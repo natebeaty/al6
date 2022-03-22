@@ -3,7 +3,7 @@
   <!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
   {% include 'partials/_head' %}
-  {% if entry is defined and craft.app.request.getSegment(1) %}
+  {% if craft.app.request.getSegment(1) %}
     {% set pageClass = (bodyClass is defined and bodyClass matches '/page\-/') ? '' : 'page-' ~ craft.app.request.getSegment(1) %}
   {% else %}
     {% set pageClass = 'page-home' %}
