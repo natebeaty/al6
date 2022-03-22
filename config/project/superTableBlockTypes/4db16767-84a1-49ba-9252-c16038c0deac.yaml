@@ -1,0 +1,105 @@
+field: b9b32ab0-d5dc-4406-aa3c-51890a2f4cca # Social Links
+fieldLayouts:
+  3c7daa2d-4aa0-41e0-8847-849eac848588:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ea1e5860-b977-428c-84ec-aeede3de6781 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 86f51217-15e7-43c2-a243-9df28902664b # URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4e24dd23-7a35-42a3-884d-8dd41fe38708 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4e24dd23-7a35-42a3-884d-8dd41fe38708: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: 'Add an image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  86f51217-15e7-43c2-a243-9df28902664b: # URL
+    columnSuffix: null
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: socialUrl
+    instructions: ''
+    name: URL
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  ea1e5860-b977-428c-84ec-aeede3de6781: # Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: socialTitle
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

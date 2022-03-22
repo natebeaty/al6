@@ -1,0 +1,38 @@
+fieldLayouts:
+  ab155a32-5002-484e-b57b-c36322730517:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: newsIndex
+hasTitleField: false
+name: 'News Index'
+section: 4c74e475-0c0e-43c4-83d8-a70c025fd02b # News Index
+sortOrder: 1
+titleFormat: News
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

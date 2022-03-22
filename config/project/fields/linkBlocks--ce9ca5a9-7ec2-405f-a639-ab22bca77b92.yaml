@@ -1,0 +1,50 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 015d48f9-dd42-4c18-b3b5-8a8f4e9106e9 # Common
+handle: linkBlocks
+instructions: ''
+name: 'Link Blocks'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 25f7071a-0510-4f79-a798-33bd9b87fc5d # Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 89b317b4-8edc-4c80-9477-1406a3da4165 # URL
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - e8ce7d83-e450-4872-a359-71110fe805af # Image
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 228b1a99-262d-49bc-a796-5f102632eb26 # Description
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_linkblocks}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

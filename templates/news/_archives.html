@@ -1,0 +1,38 @@
+{% set bodyClass = 'page-news' %}
+{% extends "_layout" %}
+
+{# {% if entry is not defined %}
+  {% set entry = craft.entries.section('newsIndex').one() %}
+{% endif %} #}
+
+{% if year is not defined %}
+  {% set year = now|date('Y') %}
+{% endif %}
+
+{% block content %}
+  {% cache unless currentUser %}
+  {% set entriesInYear = craft.entries()
+    .section('news')
+    .after(year)
+    .before(year+1)
+    .all() %}
+
+  <div class="grid spaced">
+    <div class="col-md-3-4">
+      <h1>{{ year }}</h1>
+      {% for month, entries in entriesInYear|group("postDate|date('F')") %}
+        <h3>{{ month }}</h3>
+        <ul>
+          {% for entry in entries %}
+            <li>{{ entry.getLink() }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+    <div class="col-md-1-4">
+      {% include "news/_sidebar" %}
+    </div>
+  </div>
+
+  {% endcache %}
+{% endblock %}

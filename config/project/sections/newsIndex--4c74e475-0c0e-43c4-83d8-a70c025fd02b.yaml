@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: newsIndex
+name: 'News Index'
+propagationMethod: all
+siteSettings:
+  4baa37ad-12ad-43a8-b9da-86dc1276ac93: # A-L 2.0
+    enabledByDefault: true
+    hasUrls: true
+    template: news/index
+    uriFormat: news-index
+type: single

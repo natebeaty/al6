@@ -1,0 +1,23 @@
+{# Static dropdown nav menu #}
+{% set nav = [
+  {"href": "/news/", "name": "News", "image": "News.png" },
+  {"href": "/about/", "name": "About", "image": "About.png" },
+  {"href": "/links/", "name": "Links", "image": "Links.png" },
+] %}
+
+{% import _self as navigation %}
+
+{% macro menu_links(items, outside, inside) %}
+{% spaceless %}
+  {% import _self as navigation %}
+    {% for item in items %}
+      <{{inside}} class="nav-{{ item.name|lower }}{% if item.href in craft.app.request.absoluteUrl %} active{% endif %}">
+        <a href="{{ item.href }}"><img src="/assets/images/{{ item.image }}" alt="{{ item.name }}"></a>
+      </{{inside}}>
+    {% endfor %}
+{% endspaceless %}
+{% endmacro %}
+
+<ul class="primary-nav">
+  {{ navigation.menu_links(nav, 'ul', 'li') }}
+</ul>

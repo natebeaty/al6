@@ -1,0 +1,64 @@
+// Typography
+
+// @font-face {
+//   font-family: 'gt-sectra-regular';
+//   src: url('/assets/fonts/gt-sectra-bold-italic-webfont.woff2') format('woff2'),
+//        url('/assets/fonts/gt-sectra-bold-italic-webfont.woff') format('woff');
+//   font-weight: bold;
+//   font-style: italic;
+// }
+
+// font-family: 'Bitter', serif;
+// font-family: 'Open Sans', sans-serif;
+
+// Fonts
+$font-display: 'Open Sans', sans-serif;
+$font-header: 'Bitter', serif;
+$font-regular: 'Open Sans', sans-serif;
+
+h1,h2,h3,h4 {
+  @include smooth;
+}
+
+ul,
+ol,
+p {
+  font: 18px/1.6 $font-regular;
+  margin: 0 0 grid(2);
+}
+
+
+h1,
+.h1 {
+  font: 35px/1.2 $font-header;
+  margin: 0 0 grid(4);
+
+  @include media-md {
+    font: 50px/1.166666667 $font-header;
+  }
+}
+
+h2,
+.h2 {
+	font: 25px/1.4 $font-header;
+  margin: 0 0 grid(2);
+
+  @include media-md {
+    font: 40px/1.25 $font-header;
+  }
+}
+
+h3,
+.h3 {
+  font: 20px/1.4 $font-header;
+  margin: 0 0 grid(2);
+
+  @include media-md {
+    font: 30px/1.3333 $font-header;
+  }
+}
+
+h4,
+.h4 {
+	font: bold 16px/1.5625 $font-display;
+}

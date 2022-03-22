@@ -1,0 +1,24 @@
+<article class="news-entry hover-links">
+  {% set newsImage = newsEntry.newsImage[0] ?? null %}
+  {% if newsImage %}
+    <div class="image-wrap">
+      <a href="{{ newsEntry.getUrl() }}" class="image" style="background-image: url({{ treatedImage ? treatedImage.getUrl() : '' }});"></a>
+    </div>
+  {% endif %}
+  <div class="article-meta">
+    {% if singleEntry is defined %}
+      <h1>{{ newsEntry.title }}</h1>
+    {% else %}
+      <h3><a href="{{ newsEntry.getUrl() }}">{{ newsEntry.title }}</a></h3>
+    {% endif %}
+    <time datetime="{{ newsEntry.postDate|date('Y-m-d') }}">
+      {{ newsEntry.postDate|date('m.d.Y') }}
+    </time>
+  </div>
+  <div class="body">
+    {{ newsEntry.body }}
+  </div>
+  {% if singleEntry is not defined %}
+    <a href="{{ newsEntry.getUrl() }}">Permalink</a>
+  {% endif %}
+</article>

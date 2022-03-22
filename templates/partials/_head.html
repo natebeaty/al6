@@ -1,0 +1,29 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>{% if seoTitle is defined %}{{ seoTitle }}{% elseif title is defined %}{{ title }} | {{ siteName }}{% else %}{{ siteName }}{% endif %}</title>
+  {% if seoDescription is defined -%}
+  <meta name="description" content="{{ seoDescription }}">
+  {% endif -%}
+  <link rel="canonical" href="{{ siteUrl }}">
+
+  <meta property="og:title" content="{% if seoTitle is defined %}{{ seoTitle }}{% elseif title is defined %}{{ title }} | {{ siteName }}{% else %}{{ siteName }}{% endif %}">
+
+  {% if seoDescription is defined -%}
+  <meta property="og:description" content="{{ seoDescription }}">
+  {% endif -%}
+  {% if seoImage is defined -%}
+  <meta property="og:image" content="{{ seoImage.getUrl() }}">
+  {% elseif siteOptions.shareImage|length -%}
+  <meta property="og:image" content="{{ siteOptions.shareImage.one().getUrl() }}">
+  {% endif -%}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" media="screen" href="/assets/css/main.css">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>

@@ -1,0 +1,20 @@
+<div class="sidebar hover-links">
+{% cache unless currentUser %}
+  {% set allEntries = craft.entries.section('news') %}
+  <ul>
+    <li><a class="rss" href="/news/feed.rss">RSS Feed</a></li>
+  </ul>
+
+  {# <form action="/search">
+    <label>Search:</label>
+    <input type="text" name="q">
+  </form> #}
+
+  <h3>Archives</h3>
+  <ul>
+  {% for year, entriesInYear in allEntries.all()|group("postDate|date('Y')") %}
+    <li><a href="/news/archives/{{ year }}/">{{ year }} ({{ entriesInYear|length }})</a></li>
+  {% endfor %}
+  </ul>
+{% endcache %}
+</div>

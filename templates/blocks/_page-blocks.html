@@ -1,0 +1,13 @@
+{% if entry.pageBlocks %}
+  {% for block in entry.pageBlocks.with(['images:images']).all() %}
+    {% switch block.type %}
+
+      {% case "text" %}
+        {% include "blocks/_text" with { block: block } %}
+
+      {% case "images" %}
+        {% include "blocks/_images" with { block: block } %}
+
+    {% endswitch %}
+  {% endfor %}
+{% endif %}

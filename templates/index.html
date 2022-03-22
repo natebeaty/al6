@@ -1,0 +1,11 @@
+{% extends "_layout" %}
+
+{% block content %}
+  {% cache unless currentUser %}
+
+  <div class="page-blocks">
+    {% include 'blocks/_page-blocks' %}
+  </div>
+
+  {% endcache %}
+{% endblock %}

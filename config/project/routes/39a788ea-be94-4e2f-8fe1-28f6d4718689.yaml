@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 1
+template: news/_archives
+uriParts:
+  - news/archives/
+  -
+    - year
+    - '\d{4}'
+uriPattern: 'news/archives/<year:\d{4}>'

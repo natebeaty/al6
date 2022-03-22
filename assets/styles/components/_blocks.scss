@@ -1,0 +1,35 @@
+@use "sass:math";
+
+.page-blocks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  margin-left: -#{math.div($padding-sm, 2)};
+  width: calc(100% + #{$padding-sm});
+
+  > [class*='block-'] {
+    padding: 0 math.div($padding-sm, 2);
+  }
+
+  @include media-md {
+    margin-left: -#{math.div($padding-md, 2)};
+    width: calc(100% + #{$padding-md});
+
+    .fullWidth {
+      width: 100%;
+      max-width: none;
+      flex-basis: 100%;
+    }
+    .halfWidth {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+}

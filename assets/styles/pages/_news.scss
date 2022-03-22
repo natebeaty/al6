@@ -1,0 +1,48 @@
+// News
+
+.page-news {
+
+	// Article list meta (header, date posted)
+	.article-meta {
+		margin: 0 0 $padding-sm;
+		h1,
+		h3 {
+			margin: 0;
+		}
+		time {
+		}
+	}
+
+	// Article listing, add space + divider between
+	article + article {
+		border-top: 1px solid $gray;
+		margin-top: $padding-sm;
+		padding-top: $padding-sm;
+		@include media-md {
+			margin-top: $padding-md;
+			padding-top: $padding-md;
+		}
+	}
+
+	.sidebar {
+		// form {
+		// 	margin: $padding-sm 0;
+		// }
+		border-top: 1px solid $gray;
+		margin-top: $padding-sm;
+		padding-top: $padding-sm;
+
+		h3 {
+			margin: grid(2) 0 0;
+		}
+
+		@include media-md {
+			// form {
+			// 	margin: $padding-md 0;
+			// }
+			border: none;
+			margin: 0;
+		}
+	}
+
+}

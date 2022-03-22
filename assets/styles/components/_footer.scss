@@ -1,0 +1,39 @@
+// Footer
+
+.site-footer {
+  p,
+  h3 {
+    margin: 0;
+  }
+  @include clearfix;
+  padding: $global-padding;
+  max-width: $max-page-width;
+  margin: 0 auto;
+  // background: $white;
+
+  // @include media-md {
+  //   padding: 0;
+  // }
+  .social {
+    ul {
+      li {
+        display: inline-block;
+      }
+      img {
+        display: block;
+        width: 75px;
+        height: 75px;
+        margin-right: 10px;
+      }
+    }
+    margin-top: grid(2);
+    @include media-md {
+      margin-top: 0;
+    }
+  }
+  .copyright {
+    margin: grid(2) 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}

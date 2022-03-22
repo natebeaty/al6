@@ -1,0 +1,16 @@
+{% extends "_layout" %}
+
+{% block content %}
+  {% cache unless currentUser %}
+
+  <div class="grid spaced">
+    <div class="col-md-3-4">
+      {% include "news/_article" with { newsEntry: entry, singleEntry: true } %}
+    </div>
+    <div class="col-md-1-4">
+      {% include "news/_sidebar" %}
+    </div>
+  </div>
+
+  {% endcache %}
+{% endblock %}

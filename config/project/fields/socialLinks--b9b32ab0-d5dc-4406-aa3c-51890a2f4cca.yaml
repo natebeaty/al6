@@ -1,0 +1,43 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 015d48f9-dd42-4c18-b3b5-8a8f4e9106e9 # Common
+handle: socialLinks
+instructions: ''
+name: 'Social Links'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - ea1e5860-b977-428c-84ec-aeede3de6781 # Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 86f51217-15e7-43c2-a243-9df28902664b # URL
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 4e24dd23-7a35-42a3-884d-8dd41fe38708 # Image
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_sociallinks}}'
+  fieldLayout: table
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: 'Add a link'
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField
