@@ -33,3 +33,24 @@
     }
   }
 }
+
+.carousel {
+  position: relative;
+  .image {
+    margin-right: grid(2);
+    &.landscape {
+      width: 80%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &.portrait {
+      img {
+        width: auto;
+        height: 100%;
+        max-height: 700px;
+      }
+    }
+  }
+}

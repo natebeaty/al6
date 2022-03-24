@@ -1,0 +1,9 @@
+<div class="block-images user-content {{ block.size }}">
+  <div class="carousel flickity">
+    {% for image in block.images %}
+      <div class="image {{ image.getWidth() > image.getHeight() ? 'landscape' : 'portrait' }}">
+        <img src="{{ image.getUrl() }}">
+      </div>
+    {% endfor %}
+  </div>
+</div>
