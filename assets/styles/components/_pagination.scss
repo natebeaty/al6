@@ -1,3 +1,28 @@
 .pagination {
+  padding: grid(4) 0 grid(2);
+  span,
+  a {
+  	@extend %button;
+  }
+  .current {
+  	&, &:hover {
+  		color: $black;
+  		font-weight: bold;
+  		border: none;
+  		background: $gray;
+  	}
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  .arrow {
+  }
+  li {
+    display: inline-block;
+  }
 
+  // Desktop styles
+  @include media-md {
+  }
 }
