@@ -19,14 +19,15 @@
         a {
           // transition: all 0.2s;
           display: block;
-          padding: $padding-sm;
+          margin: 10px;
+          padding: 10px;
           @include media-md {
-            padding: $padding-md;
+            padding: 20px;
           }
           img {
             display: block;
             width: auto;
-            max-height: 60px;
+            max-height: 40px;
             margin: auto;
           }
         }
@@ -42,33 +43,18 @@
   }
 
   a.logo {
-    display: flex;
-    flex-flow: row nowrap;
+    display: block;
     width: 100%;
     background: $blue;
-    padding: 20px 40px 0 20px;
-    span {
-      img {
-        display: block;
-      }
+    padding: 10px 20px;
+    @include media-md {
+      padding: 10px 40px;
     }
-    .avatar {
-      display: none;
-      flex: 0 1 200px;
-      align-self: flex-end;
-      padding-right: 40px;
-      @include media-lg {
-        display: block;
-      }
-    }
-    .url {
-      // flex: 0 1 80%;
-      flex: 1;
-      align-self: center;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
     }
   }
-}
-
-// Larger screens
-@include media-lg {
 }
