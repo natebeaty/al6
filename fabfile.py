@@ -4,7 +4,7 @@ from patchwork.transfers import rsync
 
 remote_path = "/home/natebeaty/apps/al6"
 remote_hosts = ["natebeaty@natebeaty.opalstacked.com"]
-php_command = "php81"
+php_command = "php74"
 
 # set to production
 # @task
