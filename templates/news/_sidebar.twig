@@ -3,6 +3,7 @@
   {% set allEntries = craft.entries.section('news') %}
   <ul>
     <li><a class="rss" href="/news/feed.rss">RSS Feed</a></li>
+    <li><a class="rss" href="/news/archives/">Archives</a></li>
   </ul>
 
   {# <form action="/search">
@@ -10,11 +11,5 @@
     <input type="text" name="q">
   </form> #}
 
-  <h3>Archives</h3>
-  <ul>
-  {% for year, entriesInYear in allEntries.all()|group("postDate|date('Y')") %}
-    <li><a href="/news/archives/{{ year }}/">{{ year }} ({{ entriesInYear|length }})</a></li>
-  {% endfor %}
-  </ul>
 {% endcache %}
 </div>

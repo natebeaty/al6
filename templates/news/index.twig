@@ -1,0 +1,39 @@
+{% extends "_layout" %}
+
+{% if entry is not defined %}
+  {% set entry = craft.entries.section('newsIndex').one() %}
+{% endif %}
+{% set title = entry.title %}
+{% if entry.seoTitle %}{% set seoTitle = entry.seoTitle %}{% endif %}
+{% if entry.seoDescription %}{% set seoDescription = entry.seoDescription %}{% endif %}
+{% if entry.seoImage|length %}{% set seoImage = entry.seoImage.one() %}{% endif %}
+
+{% paginate craft.entries({
+  section: 'news',
+  with: [
+    'image',
+  ]
+}).limit(siteOptions.newsPerPage) as paginationInfo, newsEntries %}
+
+{% block content %}
+  {% cache unless currentUser %}
+
+  <div class="grid spaced">
+    <div class="col-md-3-4">
+      {% for newsEntry in newsEntries %}
+        {% include "news/_article" %}
+      {% endfor %}
+    </div>
+    <div class="col-md-1-4">
+      {% include "news/_sidebar" %}
+    </div>
+  </div>
+
+  {# {% include "partials/_pagination" %} #}
+
+  <div class="pagination">
+    <a href="/news/archives/{{ now|date("Y") }}">&larr; Archives for {{ now|date("Y") }}</a>
+  </div>
+
+  {% endcache %}
+{% endblock %}
