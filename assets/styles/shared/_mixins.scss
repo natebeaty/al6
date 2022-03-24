@@ -36,6 +36,22 @@
   @include inline-link;
 }
 
+%button {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid $blue;
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    background: $blue;
+    color: $white;
+  }
+}
+.button {
+  @extend %button;
+}
+
 // Aspect ratio padding mixin (e.g. @include aspect-ratio(192,180);)
 @mixin aspect-ratio($width, $height) {
   display: block;
