@@ -1,0 +1,74 @@
+{% extends "_layout" %}
+
+{% if entry is not defined %}
+  {% set entry = craft.entries.section('comicsIndex').one() %}
+{% endif %}
+{% set title = entry.title %}
+{% if entry.seoTitle %}{% set seoTitle = entry.seoTitle %}{% endif %}
+{% if entry.seoDescription %}{% set seoDescription = entry.seoDescription %}{% endif %}
+{% if entry.seoImage|length %}{% set seoImage = entry.seoImage.one() %}{% endif %}
+
+{% if category is defined %}
+  {% set comicsEntries = craft.entries({
+    section: "comics",
+    relatedTo: category,
+    with: [
+      "comicImages",
+    ]
+  }) %}
+{% else %}
+  {% set comicsEntries = craft.entries({
+    section: "comics",
+    with: [
+      "comicImages",
+    ]
+  }) %}
+{% endif %}
+
+{% block content %}
+  {% cache unless currentUser %}
+
+  <h1>{{ category.title }}</h1>
+  <div class="grid spaced">
+    <div class="col-md-1-4 sidebar">
+      <div class="stickme">
+        <ul class="comic-type-nav">
+          {# <li {{ category is not defined ? ' class="active"' : '' }}><a href="/comics/">All</a></li> #}
+        {% for comicType in craft.categories.group('comicType').all() %}
+          <li{{ category is defined and category.slug == comicType.slug ? ' class="active"' : '' }}><a href="{{ comicType.getUrl() }}">{{ comicType.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3-4 main">
+      <ul class="comics-list">
+        {% for comic in comicsEntries.all() %}
+          {% set thumbnailImage = comic.comicImages[0] ?? null %}
+          <li>
+            <div class="grid spaced">
+              {% if thumbnailImage %}
+              <figure class="col-1-4">
+                {% if comic.comicImages|length > 1 %}
+                  <a href="{{ comic.getUrl() }}"><img src="{{ thumbnailImage.getUrl('thumb') }}" alt="{{ thumbnailImage.title }}"></a>
+                {% else %}
+                  <img src="{{ thumbnailImage.getUrl('thumb') }}" alt="{{ thumbnailImage.title }}">
+                {% endif %}
+              </figure>
+              {% endif %}
+              <div class="info col-3-4 user-content">
+                {% if comic.comicImages|length > 1 %}
+                  <h3><a href="{{ comic.getUrl() }}">{{ comic.title }}</a></h3>
+                {% else %}
+                  <h3>{{ comic.title }}</h3>
+                {% endif %}
+                {{ comic.description }}
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  {% endcache %}
+{% endblock %}

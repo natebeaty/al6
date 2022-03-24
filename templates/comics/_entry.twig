@@ -1,0 +1,41 @@
+{% set bodyClass = 'single' %}
+{% extends "_layout" %}
+
+{% set title = entry.title %}
+{% if entry.seoTitle %}{% set seoTitle = entry.seoTitle %}{% endif %}
+{% if entry.seoDescription %}{% set seoDescription = entry.seoDescription %}{% endif %}
+{% if entry.seoImage|length %}{% set seoImage = entry.seoImage.one() %}{% endif %}
+
+{% block content %}
+  {% cache unless currentUser %}
+  {% set comicType = entry.comicType.one() %}
+
+  <div class="grid spaced">
+    <div class="col-md-1-4 sidebar">
+      <div class="stickme">
+        <h1>{{ entry.title }}</h1>
+        <div class="description">
+          {{ entry.description }}
+        </div>
+        <div class="comic-nav">
+          <h4>Jump to page:</h4>
+          {% for i in range(1, entry.comicImages|length) %}
+            <a href="#{{ i }}">{{ i }}</a>
+          {% endfor %}
+        </div>
+        <div class="actions">
+          <a class="button" href="{{ comicType.getUrl() }}">&larr; All {{ comicType.title }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3-4 main">
+      <div class="comic">
+        {% for image in entry.comicImages.all() %}
+          <a name="{{ loop.index }}"></a>
+          <img loading="lazy" src="{{ image.getUrl() }}" alt="{{ entry.title }}, page {{ loop.index }}">
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endcache %}
+{% endblock %}
