@@ -16,9 +16,12 @@
 @import "components/user-content";
 @import "components/blocks";
 @import "components/footer";
+@import "components/pagination";
+@import "components/flickity";
 
 // Pages
 @import "pages/homepage";
 @import "pages/links";
 @import "pages/news";
 @import "pages/about";
+@import "pages/comics";

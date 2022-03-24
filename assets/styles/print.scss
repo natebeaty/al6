@@ -1,7 +1,7 @@
 // Print styles
 
 // Normalize styles
-@import "main";
+@import "shared/normalize";
 
 // Simplify body
 body {
@@ -16,24 +16,16 @@ body {
   margin: 0.5cm;
 }
 
-// Hide stuff
-.bg-x,
-.clx-elements,
-.site-header,
-.site-footer,
-.footer-image,
-.share,
-.filters,
-.image-wrap,
-.pagination,
-.return-crumb,
-.related-posts {
-  display: none !important;
+img {
+  max-width: 50%;
+  height: auto;
 }
 
-// No colored bgs
-.page-community .single-member {
-  background: none;
+// Hide stuff
+.site-header,
+.site-footer,
+.pagination {
+  display: none !important;
 }
 
 // Override body wrapper height set by js
