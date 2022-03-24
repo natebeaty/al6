@@ -31,6 +31,7 @@ ul {
   margin: 0;
 }
 
+// Images & captions
 figure,
 img {
   max-width: 100%;
@@ -39,21 +40,41 @@ img {
 figure {
   margin: 0;
 }
+figcaption {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  text-align: right;
+}
 
 address {
   font-style: normal;
 }
 
-// Base styles
+// Sticky items on tablet and desktop
+.stickme {
+  @include media-md {
+    position: sticky;
+    top: $global-padding;
+  }
+}
 
+// Action button areas
+.actions {
+  margin-top: $padding-sm;
+  @include media-md {
+    margin-top: $padding-md;
+  }
+}
+
+// Main page wrapper
 .page-wrapper {
   @include clearfix;
-  padding: $global-padding;
+  padding: grid(1) $padding-sm $padding-sm $padding-sm;
   max-width: $max-page-width;
   margin: 0 auto;
   background: $white;
 
-  // @include media-md {
-  //   padding: 0;
-  // }
+  @include media-md {
+    padding: grid(1) $padding-md $padding-md $padding-md;
+  }
 }
