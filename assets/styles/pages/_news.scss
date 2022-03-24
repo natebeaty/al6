@@ -13,6 +13,15 @@
 		}
 	}
 
+	.archives-list {
+		h3 {
+			margin: 0;
+		}
+		ul {
+			margin-bottom: grid(2);
+		}
+	}
+
 	// Article listing, add space + divider between
 	article + article {
 		border-top: 1px solid $gray;
@@ -25,9 +34,6 @@
 	}
 
 	.sidebar {
-		// form {
-		// 	margin: $padding-sm 0;
-		// }
 		border-top: 1px solid $gray;
 		margin-top: $padding-sm;
 		padding-top: $padding-sm;
@@ -37,9 +43,6 @@
 		}
 
 		@include media-md {
-			// form {
-			// 	margin: $padding-md 0;
-			// }
 			border: none;
 			margin: 0;
 		}
