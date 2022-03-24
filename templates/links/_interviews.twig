@@ -1,0 +1,43 @@
+{% extends "_layout" %}
+{% set title = entry.title %}
+{% if entry.seoTitle %}{% set seoTitle = entry.seoTitle %}{% endif %}
+{% if entry.seoDescription %}{% set seoDescription = entry.seoDescription %}{% endif %}
+{% if entry.seoImage|length %}{% set seoImage = entry.seoImage.one() %}{% endif %}
+{% set totalNumberOfPages = 0 %}
+
+{% block content %}
+  {% cache unless currentUser %}
+
+  <h1>Interviews</h1>
+
+  {% if entry.body %}
+    <div class="body user-content">
+      {{ entry.body }}
+    </div>
+  {% endif %}
+
+  <div class="interviews user-content">
+    <table class="link-table">
+      <thead>
+        <tr>
+          <th class="title">Name</th>
+          <th>Date</th>
+          <th class="interviewer">Interviewer</th>
+          <th>Topics</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in entry.interviews.all() %}
+          <tr>
+            <td class="title">{{ row.interviewName }}</td>
+            <td>{{ row.date }}</td>
+            <td>{{ row.interviewer }}</td>
+            <td>{{ row.topics }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  {% endcache %}
+{% endblock %}
