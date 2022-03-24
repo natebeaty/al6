@@ -1,12 +1,149 @@
 // Links
 
-.page-links {
+// Link grid (shared w/ comics)
+.link-grid {
+  h3 {
+    margin: 0 0 0.25em;
+  }
+}
 
-  .link-grid {
-    h3 {
-      margin: 0 0 0.25em;
+// General table styles in /links/ (bibliography, interviews)
+table.link-table {
+  text-align: left;
+  border-collapse: collapse;
+  table-layout: fixed;
+  // Style headers
+  th {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  td {
+    border: 1px solid $gray;
+    padding: 5px;
+    min-width: 100px;
+    vertical-align: middle;
+    // Paragraph tags from rich text fields (could also strip out <p> in template...)
+    p {
+      margin: 0;
     }
   }
-  @include media-md {
+  tr.summary {
+    font-weight: bold;
   }
+
+  // Set widths on certain columns for readability
+  @include media-sm {
+    .title {
+      width: 45%;
+    }
+    .interviewer {
+      width: 15%;
+    }
+  }
+}
+
+// Mobile-only styles to make tables readable
+@include max-screen($breakpoint-sm) {
+  table.link-table {
+    &, thead, tbody, th, td, tr {
+      display: block;
+    }
+    // Visually hide table headers but keep accessible
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    td {
+      border: none;
+      + td {
+        border-top: 1px solid $gray;
+      }
+    }
+    td::before {
+      display: block;
+      content: attr(data-label);
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $gray;
+    }
+
+    // Unset specific widths
+    td.title,
+    td.interviewer {
+      width: 100%;
+    }
+
+    tr {
+      margin-bottom: grid(2);
+      // Visually distinguish "rows"
+      &:nth-child(odd) {
+        background: #eee;
+      }
+      // Summary rows don't need labels
+      &.summary {
+        td::before {
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Links index page
+ */
+.page-links {
+
+  // Social icons
+  .social-links {
+    margin: $padding-sm 0;
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 10px;
+      justify-content: center;
+      li {
+        display: block;
+        flex: 0 1 45px;
+        max-width: 45px;
+        height: 45px;
+        a {
+          display: block;
+        }
+      }
+    }
+
+    // Tablet/desktop styles
+    @include media-sm {
+      margin: grid(1) 0 $padding-md;
+      ul {
+        // Spread out icons
+        justify-content: space-between;
+        li {
+          // Larger images
+          flex: 0 1 75px;
+          max-width: 75px;
+          height: 75px;
+          a {
+            // Gray out icons until hover
+            img {
+              filter: grayscale(100%);
+              opacity: 0.5;
+            }
+            &:hover {
+              img {
+                filter: none;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
