@@ -1,5 +1,6 @@
 from fabric import task
 from invoke import run as local
+from patchwork.transfers import rsync
 
 remote_path = "/home/natebeaty/apps/al6"
 remote_hosts = ["natebeaty@natebeaty.opalstacked.com"]
@@ -30,9 +31,9 @@ def clear_cache(c):
     c.run("cd {} && ./craft clear-caches/data".format(remote_path))
 
 # local commands
-# @task
-# def assets(c):
-#     local("gulp --production")
+@task(hosts=remote_hosts)
+def syncuploads(c):
+    rsync(c, "web/uploads/", "{}/web/uploads/".format(remote_path))
 
 # @task
 # def dev(c):
