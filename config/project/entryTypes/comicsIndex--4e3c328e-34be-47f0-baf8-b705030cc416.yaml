@@ -1,5 +1,5 @@
 fieldLayouts:
-  f0c90984-cfe3-4f0a-954f-6fc21ebc970a:
+  e9a3b412-8189-4f29-a29f-3b507706b8bb:
     tabs:
       -
         elements:
@@ -24,15 +24,6 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\EntryTitleField
-            warning: null
-            width: 100
-          -
-            fieldUid: 08cbe854-430a-4209-a87d-cc863f659182 # Page Blocks
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
         name: Content
@@ -68,10 +59,10 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: about
-hasTitleField: false
-name: About
-section: dd1fdb3a-8fad-48b2-bf73-8516edb33e49 # About
+handle: comicsIndex
+hasTitleField: true
+name: 'Comics Index'
+section: ab89bd20-d119-4ac0-92b5-6ecdedb392fc # Comics Index
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

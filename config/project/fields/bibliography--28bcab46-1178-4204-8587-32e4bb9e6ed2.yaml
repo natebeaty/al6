@@ -1,42 +1,49 @@
-columnSuffix: null
+columnSuffix: hikiawuu
 contentColumnType: string
-fieldGroup: 58c2356a-6bf8-4648-ae2e-b0d45ba067f4 # Site Options
-handle: socialLinks
+fieldGroup: 015d48f9-dd42-4c18-b3b5-8a8f4e9106e9 # Common
+handle: bibliography
 instructions: ''
-name: 'Social Links'
+name: Bibliography
 searchable: false
 settings:
   columns:
     __assoc__:
       -
-        - ea1e5860-b977-428c-84ec-aeede3de6781 # Title
+        - 4c57db8a-2a37-4bf4-8636-62780119f7c0 # Title
         -
           __assoc__:
             -
               - width
               - ''
       -
-        - 86f51217-15e7-43c2-a243-9df28902664b # URL
+        - c5367f71-b0ec-4e4d-8813-02ce06fed536 # Release Date
         -
           __assoc__:
             -
               - width
               - ''
       -
-        - 4e24dd23-7a35-42a3-884d-8dd41fe38708 # Image
+        - f149d6a3-c80e-45dc-a138-3ad98d2f5291 # Number of Pages
         -
           __assoc__:
             -
               - width
               - ''
-  contentTable: '{{%stc_sociallinks}}'
+      -
+        - 7d2158f0-f36b-4144-b226-3f765ee39d98 # Anthology / Publisher
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_bibliography}}'
   fieldLayout: table
   maxRows: ''
   minRows: ''
   placeholderKey: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: 'Add a link'
+  selectionLabel: ''
   staticField: ''
 translationKeyFormat: null
 translationMethod: site

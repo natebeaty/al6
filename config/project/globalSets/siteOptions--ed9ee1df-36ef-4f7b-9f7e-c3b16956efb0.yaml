@@ -13,7 +13,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b9b32ab0-d5dc-4406-aa3c-51890a2f4cca # Social Links
+            fieldUid: e361925d-2758-43ae-af93-763708c38a12 # Share Image
             instructions: null
             label: null
             required: false
@@ -22,7 +22,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: e361925d-2758-43ae-af93-763708c38a12 # Share Image
+            fieldUid: 975e76ae-9f61-4063-b5c6-1c5ea2c34115 # News Per Page
             instructions: null
             label: null
             required: false

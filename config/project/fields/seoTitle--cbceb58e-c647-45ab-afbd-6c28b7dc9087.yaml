@@ -1,0 +1,19 @@
+columnSuffix: tetsqeoq
+contentColumnType: string(276)
+fieldGroup: 620ceeaa-4529-4c96-9395-59eec2781da7 # SEO
+handle: seoTitle
+instructions: 'Custom title override to improve SEO'
+name: 'SEO Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 69
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,22 +1,23 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 58c2356a-6bf8-4648-ae2e-b0d45ba067f4 # Site Options
-handle: shareImage
-instructions: ''
-name: 'Share Image'
+fieldGroup: 620ceeaa-4529-4c96-9395-59eec2781da7 # SEO
+handle: seoImage
+instructions: 'Used when sharing a post or page on social'
+name: 'SEO Image'
 searchable: false
 settings:
   allowSelfRelations: false
   allowUploads: true
-  allowedKinds: null
+  allowedKinds:
+    - image
   defaultUploadLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
   previewMode: full
-  restrictFiles: ''
+  restrictFiles: '1'
   selectionLabel: 'Add an image'
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General

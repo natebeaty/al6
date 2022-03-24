@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: newsArchives
+name: 'News Archives'
+propagationMethod: all
+siteSettings:
+  4baa37ad-12ad-43a8-b9da-86dc1276ac93: # A-L 6.0
+    enabledByDefault: true
+    hasUrls: true
+    template: news/_archives
+    uriFormat: news/archives
+type: single

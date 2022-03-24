@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: false
+handle: comics
+name: Comics
+propagationMethod: all
+siteSettings:
+  4baa37ad-12ad-43a8-b9da-86dc1276ac93: # A-L 6.0
+    enabledByDefault: true
+    hasUrls: true
+    template: comics/_entry
+    uriFormat: 'comics/{slug}'
+structure:
+  maxLevels: null
+  uid: ed844c0a-fefa-45c7-b3aa-c696da32c9d4
+type: structure

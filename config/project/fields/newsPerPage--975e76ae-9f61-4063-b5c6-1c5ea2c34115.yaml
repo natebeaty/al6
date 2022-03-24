@@ -1,0 +1,20 @@
+columnSuffix: zztvyiat
+contentColumnType: integer(10)
+fieldGroup: 58c2356a-6bf8-4648-ae2e-b0d45ba067f4 # Site Options
+handle: newsPerPage
+instructions: 'How many news items to show per page'
+name: 'News Per Page'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 5
+  max: null
+  min: 1
+  prefix: null
+  previewCurrency: ''
+  previewFormat: none
+  size: '2'
+  suffix: Posts
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

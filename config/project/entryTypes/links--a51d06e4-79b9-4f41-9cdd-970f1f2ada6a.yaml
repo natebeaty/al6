@@ -28,6 +28,15 @@ fieldLayouts:
             width: 100
           -
             fieldUid: a8e71ee5-274e-4e21-9156-dcd951e10739 # Body
+            instructions: 'Optional text at top of page'
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b9b32ab0-d5dc-4406-aa3c-51890a2f4cca # Social Links
             instructions: null
             label: null
             required: false

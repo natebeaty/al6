@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 790b8232-1c19-47f1-9eda-8ab4993c0f3f # Comics
+handle: comicImages
+instructions: ''
+name: 'Comic Images'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:7b466644-d7d2-4ddc-bb1c-42e5bab64ec0' # Comics
+  defaultUploadLocationSubpath: '{slug}'
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Add images'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:7b466644-d7d2-4ddc-bb1c-42e5bab64ec0' # Comics
+  singleUploadLocationSubpath: '{slug}'
+  source: null
+  sources:
+    - 'volume:7b466644-d7d2-4ddc-bb1c-42e5bab64ec0' # Comics
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

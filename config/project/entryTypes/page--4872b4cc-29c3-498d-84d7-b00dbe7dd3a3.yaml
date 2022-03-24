@@ -1,5 +1,5 @@
 fieldLayouts:
-  f0c90984-cfe3-4f0a-954f-6fc21ebc970a:
+  1d00b1f5-c197-4ffb-a637-f8e9cc70b357:
     tabs:
       -
         elements:
@@ -24,6 +24,15 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: a8e71ee5-274e-4e21-9156-dcd951e10739 # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
           -
@@ -68,11 +77,11 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: about
-hasTitleField: false
-name: About
-section: dd1fdb3a-8fad-48b2-bf73-8516edb33e49 # About
+handle: page
+hasTitleField: true
+name: Page
+section: 721d3c42-1e0b-43d9-9b2e-eda354e5c379 # Link Pages
 sortOrder: 1
-titleFormat: '{section.name|raw}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

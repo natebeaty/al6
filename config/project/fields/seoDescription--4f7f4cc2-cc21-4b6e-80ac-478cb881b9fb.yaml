@@ -1,0 +1,19 @@
+columnSuffix: hmdhdfle
+contentColumnType: string(620)
+fieldGroup: 620ceeaa-4529-4c96-9395-59eec2781da7 # SEO
+handle: seoDescription
+instructions: 'Used for meta description to improve SEO'
+name: 'SEO Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 155
+  code: ''
+  columnType: null
+  initialRows: '2'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -69,20 +69,24 @@ fields:
     type: craft\fields\Assets
   86f51217-15e7-43c2-a243-9df28902664b: # URL
     columnSuffix: null
-    contentColumnType: string(255)
+    contentColumnType: text
     fieldGroup: null
     handle: socialUrl
     instructions: ''
     name: URL
     searchable: false
     settings:
-      maxLength: '255'
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
       placeholder: null
-      types:
-        - url
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\Url
+    type: craft\fields\PlainText
   ea1e5860-b977-428c-84ec-aeede3de6781: # Title
     columnSuffix: null
     contentColumnType: text

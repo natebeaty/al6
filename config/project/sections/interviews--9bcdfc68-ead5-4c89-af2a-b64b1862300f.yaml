@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: interviews
+name: Interviews
+propagationMethod: all
+siteSettings:
+  4baa37ad-12ad-43a8-b9da-86dc1276ac93: # A-L 6.0
+    enabledByDefault: true
+    hasUrls: true
+    template: links/_interviews
+    uriFormat: links/interviews
+type: single

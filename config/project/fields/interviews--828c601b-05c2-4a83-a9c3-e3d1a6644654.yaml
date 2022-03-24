@@ -1,42 +1,49 @@
-columnSuffix: null
+columnSuffix: mfktklwn
 contentColumnType: string
-fieldGroup: 58c2356a-6bf8-4648-ae2e-b0d45ba067f4 # Site Options
-handle: socialLinks
+fieldGroup: 015d48f9-dd42-4c18-b3b5-8a8f4e9106e9 # Common
+handle: interviews
 instructions: ''
-name: 'Social Links'
+name: Interviews
 searchable: false
 settings:
   columns:
     __assoc__:
       -
-        - ea1e5860-b977-428c-84ec-aeede3de6781 # Title
+        - 57833ca5-8ac6-4bf7-98d6-6ba454a3cea5 # Name
         -
           __assoc__:
             -
               - width
               - ''
       -
-        - 86f51217-15e7-43c2-a243-9df28902664b # URL
+        - cf4366ab-a69e-47f1-aefe-31870e2276f3 # Date
         -
           __assoc__:
             -
               - width
               - ''
       -
-        - 4e24dd23-7a35-42a3-884d-8dd41fe38708 # Image
+        - 526177fe-7cbc-4b91-97f4-27abb175e5a8 # Interviewer
         -
           __assoc__:
             -
               - width
               - ''
-  contentTable: '{{%stc_sociallinks}}'
+      -
+        - be4dcd68-2b70-42af-8608-0f946398e666 # Topics
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_interviews}}'
   fieldLayout: table
   maxRows: ''
   minRows: ''
   placeholderKey: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: 'Add a link'
+  selectionLabel: ''
   staticField: ''
 translationKeyFormat: null
 translationMethod: site

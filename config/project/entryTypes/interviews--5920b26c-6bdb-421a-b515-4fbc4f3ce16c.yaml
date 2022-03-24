@@ -1,5 +1,5 @@
 fieldLayouts:
-  f0c90984-cfe3-4f0a-954f-6fc21ebc970a:
+  e24d6086-2395-41de-98f5-f7b5e1035d28:
     tabs:
       -
         elements:
@@ -27,7 +27,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 08cbe854-430a-4209-a87d-cc863f659182 # Page Blocks
+            fieldUid: a8e71ee5-274e-4e21-9156-dcd951e10739 # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 828c601b-05c2-4a83-a9c3-e3d1a6644654 # Interviews
             instructions: null
             label: null
             required: false
@@ -68,10 +77,10 @@ fieldLayouts:
             width: 100
         name: SEO
         sortOrder: 2
-handle: about
+handle: interviews
 hasTitleField: false
-name: About
-section: dd1fdb3a-8fad-48b2-bf73-8516edb33e49 # About
+name: Interviews
+section: 9bcdfc68-ead5-4c89-af2a-b64b1862300f # Interviews
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
