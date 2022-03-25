@@ -931,6 +931,9 @@ address {
   }
 }
 @media screen and (max-width: 767px) {
+  body.nav-stuck {
+    padding-top: 136px;
+  }
   body.nav-stuck .site-header nav {
     position: fixed;
     z-index: 10;
