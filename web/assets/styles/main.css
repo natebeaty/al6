@@ -778,6 +778,7 @@ h4,
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -920,7 +921,51 @@ address {
   max-width: 900px;
   margin: 0 auto;
 }
+.site-header a.logo img.alec-mini {
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+  .alec-min {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  body.nav-stuck .site-header nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #2875A9;
+  }
+  body.nav-stuck .site-header nav a.logo img {
+    display: none;
+  }
+  body.nav-stuck .site-header nav a.logo img.alec-mini {
+    display: block;
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  body.nav-stuck .site-header nav .primary-nav {
+    position: absolute;
+    top: 7px;
+    left: 70px;
+    width: calc(100% - 70px);
+  }
+  body.nav-stuck .site-header nav .primary-nav li a {
+    padding: 0;
+  }
+  body.nav-stuck .site-header nav .primary-nav li a img {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+    max-height: 18px;
+  }
+}
 .hover-links a {
   background-color: rgba(40, 117, 169, 0);
   transition: all 0.1s;
@@ -1064,6 +1109,31 @@ address {
   font-size: 14px;
 }
 
+a.to-top {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #2875A9;
+}
+a.to-top img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  a.to-top {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+body.nav-stuck a.to-top {
+  display: block;
+}
+
 .pagination {
   padding: 40px 0 20px;
 }
@@ -1086,7 +1156,6 @@ https://flickity.metafizzy.co
 .flickity-enabled {
   position: relative;
 }
-
 .flickity-enabled:focus {
   outline: none;
 }

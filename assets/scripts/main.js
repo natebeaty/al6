@@ -4,7 +4,7 @@ import 'flickity-fade';
 import imagesLoaded from 'imagesloaded';
 import fitvids from 'fitvids';
 
-// Custom domReady
+// Custom domReady for vanilla js
 export const domReady = (callBack) => {
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', callBack);
@@ -15,6 +15,16 @@ export const domReady = (callBack) => {
 }
 
 domReady(() =>  {
+
+  // Sticky mobile nav
+  window.onscroll = function() {
+    let y = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+    if (y > 200) {
+      document.body.classList.add('nav-stuck');
+    } else {
+      document.body.classList.remove('nav-stuck');
+    }
+  };
 
   // Fit them vids! (makes video embeds responsive)
   fitvids();

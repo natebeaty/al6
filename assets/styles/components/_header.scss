@@ -55,6 +55,55 @@
       width: 100%;
       max-width: 900px;
       margin: 0 auto;
+      &.alec-mini {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media-md {
+  .alec-min {
+    display: none;
+  }
+}
+
+@include max-screen($breakpoint-md) {
+  body.nav-stuck .site-header nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: $blue;
+    a.logo {
+      img {
+        display: none;
+        &.alec-mini {
+          display: block;
+          width: 60px;
+          height: auto;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+        }
+      }
+    }
+    .primary-nav {
+      position: absolute;
+      top: 7px;
+      left: 70px;
+      width: calc(100% - 70px);
+      li {
+        a {
+          padding: 0;
+          img {
+            filter: brightness(0) invert(1);
+            max-height: 18px;
+          }
+        }
+      }
     }
   }
 }

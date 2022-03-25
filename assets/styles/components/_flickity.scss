@@ -4,9 +4,10 @@ https://flickity.metafizzy.co
 
 .flickity-enabled {
   position: relative;
+  &:focus {
+    outline: none;
+  }
 }
-
-.flickity-enabled:focus { outline: none; }
 
 .flickity-viewport {
   overflow: hidden;
