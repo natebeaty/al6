@@ -2,7 +2,7 @@ from fabric import task
 from invoke import run as local
 from patchwork.transfers import rsync
 
-remote_path = "/home/natebeaty/apps/al6_apache"
+remote_path = "/home/natebeaty/apps/al6"
 remote_hosts = ["natebeaty@natebeaty.opalstacked.com"]
 php_command = "php81"
 
