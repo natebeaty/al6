@@ -1,4 +1,4 @@
-dateModified: 1648691643
+dateModified: 1648744833
 email:
   fromEmail: nate@clixel.com
   fromName: 'A-L 2.0'
@@ -105,6 +105,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  shortcodes:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   single-cat:
     edition: standard
     enabled: true
