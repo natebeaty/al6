@@ -883,6 +883,7 @@ address {
   display: block;
   margin: 10px;
   padding: 10px;
+  background: #2875A9;
 }
 @media screen and (min-width: 768px) {
   .site-header nav .primary-nav li a {
@@ -894,42 +895,45 @@ address {
   width: auto;
   max-height: 40px;
   margin: auto;
-}
-.site-header nav .primary-nav li.active a,
-.site-header nav .primary-nav li a:hover {
-  background: #2875A9;
-}
-.site-header nav .primary-nav li.active a img,
-.site-header nav .primary-nav li a:hover img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
+.site-header nav .primary-nav li.active a {
+  background: none;
+}
+.site-header nav .primary-nav li.active a img {
+  -webkit-filter: none;
+          filter: none;
+}
 .site-header a.logo {
-  display: block;
+  display: flex;
+  flex-flow: row nowrap;
   width: 100%;
   background: #2875A9;
-  padding: 10px 20px;
+  padding: 20px 40px 0 20px;
 }
-@media screen and (min-width: 768px) {
-  .site-header a.logo {
-    padding: 10px 40px;
+.site-header a.logo span img {
+  display: block;
+}
+.site-header a.logo .avatar {
+  display: none;
+  flex: 0 1 200px;
+  align-self: flex-end;
+  padding-right: 40px;
+}
+@media screen and (min-width: 1100px) {
+  .site-header a.logo .avatar {
+    display: block;
   }
 }
-.site-header a.logo img {
-  display: block;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+.site-header a.logo .url {
+  flex: 1;
+  align-self: center;
 }
-.site-header a.logo img.alec-mini {
+.site-header a.logo .alec-mini {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .alec-min {
-    display: none;
-  }
-}
 @media screen and (max-width: 767px) {
   body.nav-stuck {
     padding-top: 136px;
@@ -943,11 +947,13 @@ address {
     height: 50px;
     background: #2875A9;
   }
-  body.nav-stuck .site-header nav a.logo img {
+  body.nav-stuck .site-header nav a.logo span {
     display: none;
   }
-  body.nav-stuck .site-header nav a.logo img.alec-mini {
+  body.nav-stuck .site-header nav a.logo span.alec-mini {
     display: block;
+  }
+  body.nav-stuck .site-header nav a.logo span.alec-mini img {
     width: 60px;
     height: auto;
     position: absolute;
@@ -1465,6 +1471,10 @@ table.link-table td.interviewer {
 }
 .page-comics .comics-list li {
   margin: 0 0 20px;
+}
+.page-comics .comics-list .info p {
+  font-size: 0.9em;
+  margin: 0 0 0.5rem;
 }
 .page-comics .comic img {
   display: block;
