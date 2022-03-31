@@ -32,16 +32,7 @@
     {% endfor %}
   </ul>
 
-  <div class="social-links">
-    <ul>
-      {% for socialLink in entry.socialLinks.all() %}
-        {% set socialImage = socialLink.image.one() %}
-        <li>
-          <a href="{{ socialLink.socialUrl }}"><img src="{{ socialImage.getUrl() }}" title="{{ socialImage.title }}"></a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+  {% include 'partials/_social-links' %}
 
   {% endcache %}
 {% endblock %}
