@@ -1413,16 +1413,6 @@ table.link-table td.interviewer {
     max-width: 75px;
     height: 75px;
   }
-  .page-links .social-links ul li a img {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-    opacity: 0.5;
-  }
-  .page-links .social-links ul li a:hover img {
-    -webkit-filter: none;
-            filter: none;
-    opacity: 1;
-  }
 }
 
 .page-news .article-meta {

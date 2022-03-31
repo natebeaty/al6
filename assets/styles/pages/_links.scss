@@ -128,19 +128,19 @@ table.link-table {
           flex: 0 1 75px;
           max-width: 75px;
           height: 75px;
-          a {
-            // Gray out icons until hover
-            img {
-              filter: grayscale(100%);
-              opacity: 0.5;
-            }
-            &:hover {
-              img {
-                filter: none;
-                opacity: 1;
-              }
-            }
-          }
+          // a {
+          //   // Gray out icons until hover
+          //   img {
+          //     filter: grayscale(100%);
+          //     opacity: 0.5;
+          //   }
+          //   &:hover {
+          //     img {
+          //       filter: none;
+          //       opacity: 1;
+          //     }
+          //   }
+          // }
         }
       }
     }
