@@ -1,0 +1,10 @@
+<div class="social-links">
+  <ul>
+    {% for socialLink in siteOptions.socialLinks.all() %}
+      {% set socialImage = socialLink.image.one() %}
+      <li>
+        <a href="{{ socialLink.socialUrl }}"><img src="{{ socialImage.getUrl() }}" title="{{ socialImage.title }}"></a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
