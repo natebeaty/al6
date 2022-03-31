@@ -9,7 +9,7 @@
     {% if singleEntry is defined %}
       <h1>{{ newsEntry.title }}</h1>
     {% else %}
-      <h3><a href="{{ newsEntry.getUrl() }}">{{ newsEntry.title }}</a></h3>
+      <h2><a href="{{ newsEntry.getUrl() }}">{{ newsEntry.title }}</a></h2>
     {% endif %}
     <time datetime="{{ newsEntry.postDate|date('Y-m-d') }}">
       {{ newsEntry.postDate|date('m.d.Y') }}
