@@ -29,12 +29,43 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 4f7f4cc2-cc21-4b6e-80ac-478cb881b9fb # SEO Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cbceb58e-c647-45ab-afbd-6c28b7dc9087 # SEO Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2646aee3-6b1a-45ae-94dd-c254b55fc84b # SEO Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
 handle: comicType
 name: 'Comic Type'
 siteSettings:
   4baa37ad-12ad-43a8-b9da-86dc1276ac93: # A-L 6.0
     hasUrls: true
-    template: comics/index
+    template: comics/_category
     uriFormat: 'comics/{slug}'
 structure:
   maxLevels: null

@@ -32,7 +32,7 @@ handle: comics
 hasUrls: true
 name: Comics
 settings:
-  path: '@webroot/uploads/comics/'
+  path: '@webroot/uploads/comics'
 sortOrder: 3
 titleTranslationKeyFormat: null
 titleTranslationMethod: null

@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 58c2356a-6bf8-4648-ae2e-b0d45ba067f4 # Site Options
 handle: shareImage
-instructions: ''
+instructions: 'Fallback share image if SEO image is not specified for a category or entry.'
 name: 'Share Image'
 searchable: false
 settings:

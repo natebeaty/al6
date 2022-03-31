@@ -32,7 +32,7 @@ handle: news
 hasUrls: true
 name: News
 settings:
-  path: '@webroot/uploads/news/'
+  path: '@webroot/uploads/news'
 sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: null

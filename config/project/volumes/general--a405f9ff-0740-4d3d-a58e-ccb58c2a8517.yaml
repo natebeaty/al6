@@ -32,7 +32,7 @@ handle: general
 hasUrls: true
 name: General
 settings:
-  path: '@webroot/uploads/'
+  path: '@webroot/uploads'
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
