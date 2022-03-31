@@ -24,18 +24,19 @@
           @include media-md {
             padding: 20px;
           }
+          background: $blue;
           img {
             display: block;
             width: auto;
             max-height: 40px;
             margin: auto;
+            filter: brightness(0) invert(1);
           }
         }
-        &.active a,
-        a:hover {
-          background: $blue;
+        &.active a {
+          background: none;
           img {
-            filter: brightness(0) invert(1);
+            filter: none;
           }
         }
       }
@@ -43,30 +44,41 @@
   }
 
   a.logo {
-    display: block;
+    display: flex;
+    flex-flow: row nowrap;
     width: 100%;
     background: $blue;
-    padding: 10px 20px;
-    @include media-md {
-      padding: 10px 40px;
-    }
-    img {
-      display: block;
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      &.alec-mini {
-        display: none;
+    padding: 20px 40px 0 20px;
+    span {
+      img {
+        display: block;
       }
+    }
+    .avatar {
+      display: none;
+      flex: 0 1 200px;
+      align-self: flex-end;
+      padding-right: 40px;
+      @include media-lg {
+        display: block;
+      }
+    }
+    .url {
+      // flex: 0 1 80%;
+      flex: 1;
+      align-self: center;
+    }
+    .alec-mini {
+      display: none;
     }
   }
 }
 
-@include media-md {
-  .alec-min {
-    display: none;
-  }
-}
+// @include media-md {
+//   .alec-mini {
+//     display: none;
+//   }
+// }
 
 @include max-screen($breakpoint-md) {
   body.nav-stuck {
@@ -80,15 +92,17 @@
       height: 50px;
       background: $blue;
       a.logo {
-        img {
+        span {
           display: none;
           &.alec-mini {
             display: block;
-            width: 60px;
-            height: auto;
-            position: absolute;
-            top: 5px;
-            left: 5px;
+            img {
+              width: 60px;
+              height: auto;
+              position: absolute;
+              top: 5px;
+              left: 5px;
+            }
           }
         }
       }
