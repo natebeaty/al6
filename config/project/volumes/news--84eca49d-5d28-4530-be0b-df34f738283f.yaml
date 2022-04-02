@@ -37,4 +37,4 @@ sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
 type: craft\volumes\Local
-url: '@web/uploads/news'
+url: '@rootUrl/uploads/news'
