@@ -97,4 +97,7 @@ table.link-table {
  * Links index page
  */
 .page-links {
+  .link-grid {
+    padding: grid(1) 0 grid(2);
+  }
 }

@@ -692,25 +692,25 @@ p {
 
 h1,
 .h1 {
-  font: 35px/1.2 "Bitter", serif;
-  margin: 0 0 20px;
+  font: 34px/1.2 "Bitter", serif;
+  margin: 10px 0 20px;
 }
 @media screen and (min-width: 768px) {
   h1,
 .h1 {
-    font: 50px/1.166666667 "Bitter", serif;
+    font: 42px/1.166666667 "Bitter", serif;
   }
 }
 
 h2,
 .h2 {
-  font: 25px/1.4 "Bitter", serif;
+  font: 24px/1.4 "Bitter", serif;
   margin: 0 0 20px;
 }
 @media screen and (min-width: 768px) {
   h2,
 .h2 {
-    font: 40px/1.25 "Bitter", serif;
+    font: 36px/1.1 "Bitter", serif;
   }
 }
 
@@ -722,13 +722,13 @@ h3,
 @media screen and (min-width: 768px) {
   h3,
 .h3 {
-    font: 30px/1.3333 "Bitter", serif;
+    font: 30px/1.1 "Bitter", serif;
   }
 }
 
 h4,
 .h4 {
-  font: bold 18px/1.5625 "Bitter", serif;
+  font: bold 18px/1.2 "Bitter", serif;
   margin: 0 0 10px;
 }
 
@@ -1432,6 +1432,10 @@ table.link-table td.interviewer {
 /**
  * Links index page
  */
+.page-links .link-grid {
+  padding: 10px 0 20px;
+}
+
 .page-news .article-meta {
   margin: 0 0 20px;
 }
@@ -1476,9 +1480,23 @@ table.link-table td.interviewer {
    * Single comic
    */
 }
+.page-comics .sidebar .stickme {
+  padding-bottom: 20px;
+}
+.page-comics .comic-nav {
+  padding: 20px 0 0;
+}
+.page-comics .comic-nav a {
+  display: inline-block;
+  padding: 5px;
+  background: #eee;
+  margin: 0 0 5px;
+  text-decoration: none;
+}
 .page-comics .comics-list li {
   margin: 0 0 20px;
 }
+.page-comics .comics-list .info div,
 .page-comics .comics-list .info p {
   font-size: 0.9em;
   margin: 0 0 0.5rem;
@@ -1507,7 +1525,7 @@ table.link-table td.interviewer {
     order: 2;
   }
   .page-comics .sidebar h1 {
-    font: 30px/1.3333 "Bitter", serif;
+    font: 36px/1 "Bitter", serif;
   }
 }
 @media screen and (max-width: 767px) {
