@@ -1,0 +1,33 @@
+<ul class="comics-list">
+  {% for comic in comicsEntries.all() %}
+    {% set thumbnailImage = comic.comicImages[0] ?? null %}
+    <li id="{{ comic.slug }}">
+      <div class="grid spaced">
+        {% if thumbnailImage %}
+        <figure class="col-1-4">
+          {% if comic.comicImages|length > 1 %}
+            <a href="{{ comic.getUrl() }}"><img src="{{ thumbnailImage.getUrl('thumb') }}" alt="{{ thumbnailImage.title }}"></a>
+          {% else %}
+            <img src="{{ thumbnailImage.getUrl('thumb') }}" alt="{{ thumbnailImage.title }}">
+          {% endif %}
+        </figure>
+        {% endif %}
+        <div class="col-3-4 user-content">
+          {% if comic.comicImages|length > 1 %}
+            <h3><a href="{{ comic.getUrl() }}">{{ comic.title }}</a></h3>
+          {% else %}
+            <h3>{{ comic.title }}</h3>
+          {% endif %}
+          <div class="description">
+            {{ comic.description }}
+            {% if comic.info %}
+              <div class="info">
+                {{ comic.info }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

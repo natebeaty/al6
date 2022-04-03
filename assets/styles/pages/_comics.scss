@@ -29,6 +29,13 @@
     }
   }
 
+  // Index page
+  .comic-type + .comic-type {
+    margin-top: grid(4);
+    padding-top: grid(4);
+    border-top: 1px solid $gray;
+  }
+
   // Single comic view
   .comic {
     img {

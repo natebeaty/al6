@@ -31,8 +31,7 @@
     <div class="col-md-3-4 main">
       <div class="comic">
         {% for image in entry.comicImages.all() %}
-          <a name="{{ loop.index }}"></a>
-          <img loading="lazy" src="{{ image.getUrl() }}" alt="{{ entry.title }}, page {{ loop.index }}">
+          <img id="{{ loop.index }}" loading="lazy" src="{{ image.getUrl() }}" alt="{{ entry.title }}, page {{ loop.index }}">
         {% endfor %}
       </div>
     </div>

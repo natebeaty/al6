@@ -16,13 +16,33 @@
 {% block content %}
   {% cache unless currentUser %}
 
-  <h1>{{ title }}</h1>
-
-  <ul class="comic-type-nav">
-    {% for comicType in craft.categories.group('comicType').all() %}
-      <li{{ category is defined and category.slug == comicType.slug ? ' class="active"' : '' }}><a href="{{ comicType.getUrl() }}">{{ comicType.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="grid spaced">
+    <div class="col-md-1-4 sidebar">
+      <div class="stickme">
+        <ul class="comic-type-nav">
+          {# <li {{ category is not defined ? ' class="active"' : '' }}><a href="/comics/">All</a></li> #}
+        {% for comicType in craft.categories.group('comicType').all() %}
+          <li{{ category is defined and category.slug == comicType.slug ? ' class="active"' : '' }}><a href="{{ comicType.getUrl() }}">{{ comicType.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3-4 main">
+      {% for comicType in craft.categories.group('comicType').all() %}
+        <div class="comic-type">
+          {% set comicsEntries = craft.entries({
+            section: "comics",
+            relatedTo: comicType,
+            with: [
+              "comicImages",
+            ]
+          }) %}
+          <h1>{{ comicType.title }}</h1>
+          {% include "comics/_list" with { comicsEntries: comicsEntries } %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 
   {% endcache %}
 {% endblock %}
