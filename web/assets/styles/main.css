@@ -1501,6 +1501,11 @@ table.link-table td.interviewer {
   font-size: 0.9em;
   margin: 0 0 0.5rem;
 }
+.page-comics .comic-type + .comic-type {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #BFBFBF;
+}
 .page-comics .comic img {
   display: block;
   margin: 10px auto;
