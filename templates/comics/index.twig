@@ -16,6 +16,7 @@
 {% block content %}
   {% cache unless currentUser %}
 
+  <h1>All Comics</h1>
   <div class="grid spaced">
     <div class="col-md-1-4 sidebar">
       <div class="stickme">
@@ -37,7 +38,7 @@
               "comicImages",
             ]
           }) %}
-          <h1>{{ comicType.title }}</h1>
+          <h2>{{ comicType.title }}</h2>
           {% include "comics/_list" with { comicsEntries: comicsEntries } %}
         </div>
       {% endfor %}
