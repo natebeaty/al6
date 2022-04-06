@@ -215,8 +215,8 @@ th {
   padding: 0;
 }
 
-.page-comics .comic-type-nav a, .pagination span,
-.pagination a, .button {
+.pagination span,
+.pagination a, .wide-buttons a, .button {
   display: inline-block;
   padding: 10px;
   text-align: center;
@@ -224,8 +224,8 @@ th {
   color: #2875A9;
   text-decoration: none;
 }
-.page-comics .comic-type-nav a:hover, .pagination span:hover,
-.pagination a:hover, .button:hover {
+.pagination span:hover,
+.pagination a:hover, .wide-buttons a:hover, .button:hover {
   background: #2875A9;
   color: #fff;
 }
@@ -859,6 +859,10 @@ address {
   }
 }
 
+.sidebar {
+  margin-top: 50px;
+}
+
 .user-content .social-links,
 .social-links {
   margin: 0 0 20px;
@@ -897,6 +901,33 @@ address {
     max-width: 75px;
     height: 75px;
   }
+}
+
+@media (hover) {
+  .-hover-blocks li:not(.active) a {
+    transition: all 0.25s ease;
+  }
+  .-hover-blocks li:not(.active) a:hover {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+
+  .user-content .-hover-blocks a:hover {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.wide-buttons {
+  margin: 0 0 20px;
+}
+.wide-buttons a {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px;
+}
+.wide-buttons li.active a {
+  background: #2875A9;
+  color: #fff;
 }
 
 .site-header nav {
@@ -1359,6 +1390,9 @@ https://flickity.metafizzy.co
 .link-grid h3 {
   margin: 0 0 0.25em;
 }
+.link-grid li {
+  margin-bottom: 20px;
+}
 
 table.link-table {
   text-align: left;
@@ -1460,20 +1494,6 @@ table.link-table td.interviewer {
     padding-top: 30px;
   }
 }
-.page-news .sidebar {
-  border-top: 1px solid #BFBFBF;
-  margin-top: 20px;
-  padding-top: 20px;
-}
-.page-news .sidebar h3 {
-  margin: 20px 0 0;
-}
-@media screen and (min-width: 768px) {
-  .page-news .sidebar {
-    border: none;
-    margin: 0;
-  }
-}
 
 .page-comics {
   /**
@@ -1509,18 +1529,6 @@ table.link-table td.interviewer {
 .page-comics .comic img {
   display: block;
   margin: 10px auto;
-}
-.page-comics .comic-type-nav {
-  margin: 0 0 20px;
-}
-.page-comics .comic-type-nav a {
-  display: block;
-  width: 100%;
-  margin: 0 0 10px;
-}
-.page-comics .comic-type-nav li.active a {
-  background: #2875A9;
-  color: #fff;
 }
 @media screen and (min-width: 768px) {
   .page-comics .main {
