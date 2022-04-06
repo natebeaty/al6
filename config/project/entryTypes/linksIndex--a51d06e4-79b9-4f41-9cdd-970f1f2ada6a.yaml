@@ -1,5 +1,5 @@
 fieldLayouts:
-  f0c90984-cfe3-4f0a-954f-6fc21ebc970a:
+  703f03ae-301b-49e4-91bd-dd443c7a5355:
     tabs:
       -
         elements:
@@ -27,7 +27,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 08cbe854-430a-4209-a87d-cc863f659182 # Page Blocks
+            fieldUid: a8e71ee5-274e-4e21-9156-dcd951e10739 # Body
+            instructions: 'Optional text at top of page'
+            label: ''
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ce9ca5a9-7ec2-405f-a639-ab22bca77b92 # Link Blocks
             instructions: null
             label: null
             required: false
@@ -37,41 +46,10 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-      -
-        elements:
-          -
-            fieldUid: 4f7f4cc2-cc21-4b6e-80ac-478cb881b9fb # SEO Description
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: cbceb58e-c647-45ab-afbd-6c28b7dc9087 # SEO Title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 2646aee3-6b1a-45ae-94dd-c254b55fc84b # SEO Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: SEO
-        sortOrder: 2
-handle: about
+handle: linksIndex
 hasTitleField: false
-name: About
-section: dd1fdb3a-8fad-48b2-bf73-8516edb33e49 # About
+name: 'Links Index'
+section: 0d137df9-8ee2-467d-a261-d5090d788157 # Links Index
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

@@ -1,15 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: linkPages
-name: 'Link Pages'
+handle: aboutIndex
+name: 'About Index'
 propagationMethod: all
 siteSettings:
   4baa37ad-12ad-43a8-b9da-86dc1276ac93: # A-L 6.0
     enabledByDefault: true
     hasUrls: true
-    template: _page
-    uriFormat: 'links/{slug}'
-structure:
-  maxLevels: null
-  uid: 521bc59c-5418-4d4f-b614-8c0758a64c3a
-type: structure
+    template: about/index
+    uriFormat: about
+type: single

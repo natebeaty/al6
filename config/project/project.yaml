@@ -1,11 +1,11 @@
-dateModified: 1648870844
+dateModified: 1649261562
 email:
   fromEmail: nate@clixel.com
   fromName: 'A-L 2.0'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    0d137df9-8ee2-467d-a261-d5090d788157: Links # Links
+    0d137df9-8ee2-467d-a261-d5090d788157: 'Links Index' # Links Index
     0f94dd9c-11a3-4b60-93f9-af36f2c1a6fd: 'Featured Image' # Featured Image
     02adb2a9-964e-41ab-b4ac-edaac109ed4f: 'Comic Type' # Comic Type
     2d8820e3-8e6b-4278-800c-ae4cdf640b73: Address # Address
@@ -19,6 +19,7 @@ meta:
     4e3c328e-34be-47f0-baf8-b705030cc416: 'Comics Index' # Comics Index
     4e24dd23-7a35-42a3-884d-8dd41fe38708: Image # Image
     4f7f4cc2-cc21-4b6e-80ac-478cb881b9fb: 'SEO Description' # SEO Description
+    4f9635ee-4621-44d7-b3d5-73391d5df358: Page # Page
     7b466644-d7d2-4ddc-bb1c-42e5bab64ec0: Comics # Comics
     7d2158f0-f36b-4144-b226-3f765ee39d98: 'Anthology / Publisher' # Anthology / Publisher
     8a51eb33-a62f-45f2-bc54-87f6ce35f4aa: Images # Images
@@ -45,12 +46,13 @@ meta:
     2646aee3-6b1a-45ae-94dd-c254b55fc84b: 'SEO Image' # SEO Image
     4872b4cc-29c3-498d-84d7-b00dbe7dd3a3: Page # Page
     5920b26c-6bdb-421a-b515-4fbc4f3ce16c: Interviews # Interviews
+    20624d71-79b0-4dd0-a367-afb3034459da: 'About Pages' # About Pages
     57833ca5-8ac6-4bf7-98d6-6ba454a3cea5: Name # Name
     526177fe-7cbc-4b91-97f4-27abb175e5a8: Interviewer # Interviewer
     644360b6-0d1e-4e88-90ee-5c0ad006c070: Homepage # Homepage
     24430226-c637-40ff-91c3-963952acebcb: 'A-L 6.0' # A-L 6.0
     a8e71ee5-274e-4e21-9156-dcd951e10739: Body # Body
-    a51d06e4-79b9-4f41-9cdd-970f1f2ada6a: Links # Links
+    a51d06e4-79b9-4f41-9cdd-970f1f2ada6a: 'Links Index' # Links Index
     a405f9ff-0740-4d3d-a58e-ccb58c2a8517: General # General
     a930a8fe-9c1e-4443-b0b0-3f5a1fad9fc7: Bibliography # Bibliography
     a9369b6c-3faf-4fac-b920-261684493c76: Text # Text
@@ -64,12 +66,12 @@ meta:
     c058c732-53bd-4770-adf6-542237db08c8: News # News
     c5367f71-b0ec-4e4d-8813-02ce06fed536: 'Release Date' # Release Date
     c28466ca-bc45-4fb5-8097-445e3bec82e2: Email # Email
-    ca859686-cbbf-4c0c-8ed3-c31c11f7d9c1: About # About
+    ca859686-cbbf-4c0c-8ed3-c31c11f7d9c1: 'About Index' # About Index
     cbceb58e-c647-45ab-afbd-6c28b7dc9087: 'SEO Title' # SEO Title
     ce9ca5a9-7ec2-405f-a639-ab22bca77b92: 'Link Blocks' # Link Blocks
     cf4366ab-a69e-47f1-aefe-31870e2276f3: Date # Date
     d03175f2-b2ce-4153-8bb9-6b61beab3416: Description # Description
-    dd1fdb3a-8fad-48b2-bf73-8516edb33e49: About # About
+    dd1fdb3a-8fad-48b2-bf73-8516edb33e49: 'About Index' # About Index
     e6fec7ec-02e6-4eee-89f2-6907fe350059: Size # Size
     e8ce7d83-e450-4872-a359-71110fe805af: Image # Image
     e354c121-92a1-4573-9536-acbcacf55626: Homepage # Homepage
