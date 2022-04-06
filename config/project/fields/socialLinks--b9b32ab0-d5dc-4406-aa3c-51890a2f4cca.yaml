@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 58c2356a-6bf8-4648-ae2e-b0d45ba067f4 # Site Options
 handle: socialLinks
-instructions: ''
+instructions: 'Currently shows on About page using the shortcode [social-links], and hardcoded at the bottom of the Links page template'
 name: 'Social Links'
 searchable: false
 settings:
