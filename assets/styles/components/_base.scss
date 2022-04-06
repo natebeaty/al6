@@ -80,6 +80,11 @@ address {
   }
 }
 
+// Sidebar
+.sidebar {
+  margin-top: grid(5);
+}
+
 // Social icons
 .user-content .social-links,
 .social-links {
@@ -110,6 +115,42 @@ address {
         flex: 0 1 75px;
         max-width: 75px;
         height: 75px;
+      }
+    }
+  }
+}
+
+// Hover effects on nav + social icons
+@media (hover) {
+  .-hover-blocks {
+    li:not(.active) a {
+      transition: all 0.25s ease;
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
+  }
+  // Social links in a user content area
+  .user-content .-hover-blocks a:hover {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+// Full width buttons
+.wide-buttons {
+  margin: 0 0 grid(2);
+  a {
+    @extend %button;
+    display: block;
+    width: 100%;
+    margin: 0 0 grid(1);
+  }
+  li {
+    &.active {
+      a {
+        background: $blue;
+        color: $white;
       }
     }
   }
