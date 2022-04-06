@@ -33,19 +33,4 @@
 		}
 	}
 
-	.sidebar {
-		border-top: 1px solid $gray;
-		margin-top: $padding-sm;
-		padding-top: $padding-sm;
-
-		h3 {
-			margin: grid(2) 0 0;
-		}
-
-		@include media-md {
-			border: none;
-			margin: 0;
-		}
-	}
-
 }

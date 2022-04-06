@@ -44,25 +44,6 @@
     }
   }
 
-  // Comic type buttons
-  .comic-type-nav {
-    margin: 0 0 grid(2);
-    a {
-      @extend %button;
-      display: block;
-      width: 100%;
-      margin: 0 0 grid(1);
-    }
-    li {
-      &.active {
-        a {
-          background: $blue;
-          color: $white;
-        }
-      }
-    }
-  }
-
   // Medium and up styles
   @include media-md {
     // Reorder main + sidebar, moving sidebar to right
