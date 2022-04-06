@@ -18,6 +18,12 @@
 {% block content %}
   {% cache unless currentUser %}
 
+  {% if entry.body %}
+    <div class="body user-content">
+      {{ entry.body }}
+    </div>
+  {% endif %}
+
   <div class="grid spaced">
     <div class="col-md-3-4">
       {% for newsEntry in newsEntries %}
