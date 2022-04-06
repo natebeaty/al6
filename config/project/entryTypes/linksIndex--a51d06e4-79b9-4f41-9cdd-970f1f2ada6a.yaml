@@ -47,7 +47,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 handle: linksIndex
-hasTitleField: false
+hasTitleField: true
 name: 'Links Index'
 section: 0d137df9-8ee2-467d-a261-d5090d788157 # Links Index
 sortOrder: 1

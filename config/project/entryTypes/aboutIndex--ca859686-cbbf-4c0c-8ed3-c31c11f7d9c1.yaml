@@ -69,7 +69,7 @@ fieldLayouts:
         name: SEO
         sortOrder: 2
 handle: aboutIndex
-hasTitleField: false
+hasTitleField: true
 name: 'About Index'
 section: dd1fdb3a-8fad-48b2-bf73-8516edb33e49 # About Index
 sortOrder: 1
