@@ -12,16 +12,16 @@
 {% block content %}
   {% cache unless currentUser %}
 
-  <h1>Archives</h1>
-
   {% if entry.body %}
     <div class="body user-content">
       {{ entry.body }}
     </div>
   {% endif %}
 
-  <div class="grid spaced archives-list hover-links">
-    <div class="col-md-3-4">
+  <div class="grid spaced archives-list">
+    <div class="col-md-3-4 hover-links">
+
+      <h1>Archives</h1>
 
       {% for date, entries in allEntries.all() | group("postDate|date('F Y')") %}
         <h3 class="date">{{ date }}</h3>

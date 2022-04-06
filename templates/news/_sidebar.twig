@@ -1,9 +1,9 @@
-<div class="sidebar hover-links">
+<div class="sidebar stickme">
 {% cache unless currentUser %}
   {% set allEntries = craft.entries.section('news') %}
-  <ul>
-    <li><a class="rss" href="/news/feed.rss">RSS Feed</a></li>
-    <li><a class="rss" href="/news/archives/">Archives</a></li>
+  <ul class="wide-buttons">
+    <li><a class="button" href="/news/feed.rss"><img src="/assets/images/rss-feed.svg" alt="RSS icon"> RSS Feed</a></li>
+    <li><a class="button" href="/news/archives/">Archives</a></li>
   </ul>
 
   {# <form action="/search">
