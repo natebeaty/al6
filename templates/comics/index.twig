@@ -16,34 +16,25 @@
 {% block content %}
   {% cache unless currentUser %}
 
-  <h1>All Comics</h1>
-  <div class="grid spaced">
-    <div class="col-md-1-4 sidebar">
-      <div class="stickme">
-        <ul class="comic-type-nav">
-          {# <li {{ category is not defined ? ' class="active"' : '' }}><a href="/comics/">All</a></li> #}
-        {% for comicType in craft.categories.group('comicType').all() %}
-          <li{{ category is defined and category.slug == comicType.slug ? ' class="active"' : '' }}><a href="{{ comicType.getUrl() }}">{{ comicType.title }}</a></li>
-        {% endfor %}
-        </ul>
-      </div>
+  {% if entry.body %}
+    <div class="body user-content">
+      {{ entry.body }}
     </div>
-    <div class="col-md-3-4 main">
-      {% for comicType in craft.categories.group('comicType').all() %}
-        <div class="comic-type">
-          {% set comicsEntries = craft.entries({
-            section: "comics",
-            relatedTo: comicType,
-            with: [
-              "comicImages",
-            ]
-          }) %}
-          <h2>{{ comicType.title }}</h2>
-          {% include "comics/_list" with { comicsEntries: comicsEntries } %}
-        </div>
-      {% endfor %}
+  {% endif %}
+
+  {% for comicType in craft.categories.group('comicType').all() %}
+    <div class="comic-type">
+      {% set comicsEntries = craft.entries({
+        section: "comics",
+        relatedTo: comicType,
+        with: [
+          "comicImages",
+        ]
+      }) %}
+      <h2>{{ comicType.title }}</h2>
+      {% include "comics/_grid" with { comicsEntries: comicsEntries } %}
     </div>
-  </div>
+  {% endfor %}
 
   {% endcache %}
 {% endblock %}
