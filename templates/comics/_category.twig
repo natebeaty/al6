@@ -15,22 +15,14 @@
 {% block content %}
   {% cache unless currentUser %}
 
-  <div class="grid spaced">
-    <div class="col-md-1-4 sidebar -padding-top">
-      <div class="stickme">
-        <ul class="wide-buttons">
-          {# <li {{ category is not defined ? ' class="active"' : '' }}><a href="/comics/">All</a></li> #}
-        {% for comicType in craft.categories.group('comicType').all() %}
-          <li{{ category is defined and category.slug == comicType.slug ? ' class="active"' : '' }}><a href="{{ comicType.getUrl() }}">{{ comicType.title }}</a></li>
-        {% endfor %}
-        </ul>
-      </div>
+  <h1>{{ title }}</h1>
+  {% if category.body %}
+    <div class="body user-content">
+      {{ category.body }}
     </div>
-    <div class="col-md-3-4 main">
-      <h1>{{ title }}</h1>
-      {% include "comics/_list" with { comicsEntries: comicsEntries } %}
-    </div>
-  </div>
+  {% endif %}
+
+  {% include "comics/_grid" with { comicsEntries: comicsEntries } %}
 
   {% endcache %}
 {% endblock %}
