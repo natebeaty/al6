@@ -1,7 +1,7 @@
 <?php
 return [
     'map' => [
-        'social-links' => 'partials/_social-links.twig',
-        'contact' => 'partials/_contact.twig',
+        'social-links' => 'shared/_social-links.twig',
+        'contact' => 'shared/_contact.twig',
     ]
 ];
