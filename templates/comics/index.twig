@@ -22,7 +22,10 @@
     </div>
   {% endif %}
 
-  {% for comicType in craft.categories.group('comicType').all() %}
+  {% include 'shared/_link-grid' %}
+
+  {# This loops through comic types and shows grids #}
+  {# {% for comicType in craft.categories.group('comicType').all() %}
     <div class="comic-type">
       {% set comicsEntries = craft.entries({
         section: "comics",
@@ -34,7 +37,7 @@
       <h2>{{ comicType.title }}</h2>
       {% include "comics/_grid" with { comicsEntries: comicsEntries } %}
     </div>
-  {% endfor %}
+  {% endfor %} #}
 
   {% endcache %}
 {% endblock %}

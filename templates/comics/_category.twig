@@ -22,7 +22,16 @@
     </div>
   {% endif %}
 
-  {% include "comics/_grid" with { comicsEntries: comicsEntries } %}
+  <div class="grid spaced">
+    <div class="col-md-1-4 sidebar -padding-top">
+      <div class="stickme">
+        {% include 'comics/_link-nav' %}
+      </div>
+    </div>
+    <div class="col-md-3-4 main">
+      {% include "comics/_list" with { comicsEntries: comicsEntries } %}
+    </div>
+  </div>
 
   {% endcache %}
 {% endblock %}

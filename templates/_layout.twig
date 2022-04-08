@@ -2,7 +2,7 @@
   <!--[if IE 9 ]> <html lang="en" class="no-js ie9 lt-ie10"> <![endif]-->
   <!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
-  {% include 'partials/_head' %}
+  {% include 'shared/_head' %}
   {% if craft.app.request.getSegment(1) %}
     {% set pageClass = (bodyClass is defined and bodyClass matches '/page\-/') ? '' : 'page-' ~ craft.app.request.getSegment(1) %}
   {% else %}
@@ -21,7 +21,7 @@
               <span class="url"><img src="/assets/images/Alec-Longstreth.com.png" alt="Hand Drawn Alec-Longstreth.com"></span>
               <span class="alec-mini"><img src="/assets/images/alec.png" alt="Hand drawn Alec"></span>
             </a>
-            {% include '/partials/_navigation' %}
+            {% include '/shared/_navigation' %}
           </nav>
         </div>
       </header>
@@ -32,7 +32,7 @@
         </main>
       </div>{# /.page-wrapper #}
 
-      {% include '/partials/_footer' %}
+      {% include '/shared/_footer' %}
 
     </div>{# /.body-wrapper #}
   </body>

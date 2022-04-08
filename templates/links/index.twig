@@ -13,26 +13,9 @@
     </div>
   {% endif %}
 
-  <ul class="link-grid grid spaced">
-    {% for link in entry.linkBlocks.with([ 'image' ]).all() %}
-      {% set thumbnailImage = link.image[0] ?? null %}
-      <li class="col-md-1-2">
-        <div class="grid spaced">
-          {% if thumbnailImage %}
-          <figure class="col-1-4">
-            <a href="{{ link.linkUrl }}"><img src="{{ thumbnailImage.getUrl() }}" alt="{{ thumbnailImage.title }}"></a>
-          </figure>
-          {% endif %}
-          <div class="info col-3-4 user-content">
-            <h3><a href="{{ link.linkUrl }}">{{ link.linkTitle }}</a></h3>
-            {{ link.description }}
-          </div>
-        </div>
-      </li>
-    {% endfor %}
-  </ul>
+  {% include 'shared/_link-grid' %}
 
-  {% include 'partials/_social-links' %}
+  {% include 'shared/_social-links' %}
 
   {% endcache %}
 {% endblock %}
