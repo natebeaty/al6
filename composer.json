@@ -1,11 +1,11 @@
 {
   "require": {
     "craftcms/cms": "3.7.38",
-    "craftcms/redactor": "2.10.5",
+    "craftcms/redactor": "2.10.6",
     "elivz/craft-single-cat": "1.2.1",
     "mmikkel/cp-field-inspect": "1.4.0.1",
     "samhernandez/craft-shortcodes": "1.1.0",
-    "spicyweb/craft-embedded-assets": "2.10.3",
+    "spicyweb/craft-embedded-assets": "2.10.4",
     "verbb/expanded-singles": "1.2.0",
     "verbb/super-table": "2.7.1",
     "vlucas/phpdotenv": "^5.4.0",
