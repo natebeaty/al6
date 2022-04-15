@@ -1,7 +1,7 @@
 <div class="block-text-with-image user-content {{ block.size }}">
   <div class="-inner">
     {{ block.body | shortcodes }}
-    {% for image in block.images %}
+    {% for image in block.images.all() %}
       {% set embeddedAsset = craft.embeddedAssets.get(image) %}
       {% if embeddedAsset %}
         {{ embeddedAsset.html }}
