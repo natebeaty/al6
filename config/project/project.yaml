@@ -1,4 +1,4 @@
-dateModified: 1649447142
+dateModified: 1649983495
 email:
   fromEmail: nate@clixel.com
   fromName: 'A-L 2.0'
@@ -6,6 +6,7 @@ email:
 meta:
   __names__:
     0d137df9-8ee2-467d-a261-d5090d788157: 'Links Index' # Links Index
+    0f3f45d2-2f82-476a-b354-075afbc6df77: Images # Images
     0f94dd9c-11a3-4b60-93f9-af36f2c1a6fd: 'Featured Image' # Featured Image
     02adb2a9-964e-41ab-b4ac-edaac109ed4f: 'Comic Type' # Comic Type
     2d8820e3-8e6b-4278-800c-ae4cdf640b73: Address # Address
@@ -30,9 +31,11 @@ meta:
     17a2b060-afb6-4940-8fac-6661eddad378: Excerpt # Excerpt
     25f7071a-0510-4f79-a798-33bd9b87fc5d: Title # Title
     28bcab46-1178-4204-8587-32e4bb9e6ed2: Bibliography # Bibliography
+    41a76bd0-faca-429a-a6c4-e1330741cb91: 'Text + Image' # Text + Image
     47f73b70-35ad-40c4-9425-950138d362ca: 'News Archives' # News Archives
     58c2356a-6bf8-4648-ae2e-b0d45ba067f4: 'Site Options' # Site Options
     84eca49d-5d28-4530-be0b-df34f738283f: News # News
+    85acd46d-50e1-45d7-af85-3d6228f5df06: Size # Size
     86f51217-15e7-43c2-a243-9df28902664b: URL # URL
     89b317b4-8edc-4c80-9477-1406a3da4165: URL # URL
     228b1a99-262d-49bc-a796-5f102632eb26: Description # Description
@@ -48,6 +51,7 @@ meta:
     5920b26c-6bdb-421a-b515-4fbc4f3ce16c: Interviews # Interviews
     20624d71-79b0-4dd0-a367-afb3034459da: 'About Pages' # About Pages
     57833ca5-8ac6-4bf7-98d6-6ba454a3cea5: Name # Name
+    94432a92-8952-4d97-b447-97b60da1a638: Body # Body
     526177fe-7cbc-4b91-97f4-27abb175e5a8: Interviewer # Interviewer
     644360b6-0d1e-4e88-90ee-5c0ad006c070: Homepage # Homepage
     24430226-c637-40ff-91c3-963952acebcb: 'A-L 6.0' # A-L 6.0

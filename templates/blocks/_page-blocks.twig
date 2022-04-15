@@ -8,6 +8,9 @@
       {% case "images" %}
         {% include "blocks/_images" with { block: block } %}
 
+      {% case "textImage" %}
+        {% include "blocks/_text-with-image" with { block: block } %}
+
     {% endswitch %}
   {% endfor %}
 {% endif %}
