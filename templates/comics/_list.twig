@@ -1,6 +1,6 @@
 <ul class="comics-list">
   {% for comic in comicsEntries.all() %}
-    {% set thumbnailImage = comic.comicImages[0] ?? null %}
+    {% set thumbnailImage = comic.comicThumbnail[0] ?? comic.comicImages[0] ?? null %}
     <li id="{{ comic.slug }}">
       <div class="grid spaced">
         {% if thumbnailImage %}

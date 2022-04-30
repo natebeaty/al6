@@ -4,7 +4,9 @@
 {% set comicsEntries = craft.entries({
   section: "comics",
   relatedTo: category,
+  unlisted: false,
   with: [
+    "comicThumbnail",
     "comicImages",
   ]
 }) %}
