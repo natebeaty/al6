@@ -76,7 +76,7 @@ address {
   background: $white;
 
   @include media-md {
-    padding: grid(1) $padding-md $padding-md $padding-md;
+    padding: grid(2) $padding-md $padding-md $padding-md;
   }
 }
 
