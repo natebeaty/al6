@@ -34,7 +34,16 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 50
+          -
+            fieldUid: cf37894e-28c1-4dff-bf5c-1cff7fc80a0c # Unlisted
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
           -
             fieldUid: 386ec114-053e-47b5-ac2f-c1db590d6cea # Info
             instructions: null
@@ -46,6 +55,15 @@ fieldLayouts:
             width: 100
           -
             fieldUid: d03175f2-b2ce-4153-8bb9-6b61beab3416 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a2377d95-b143-479f-a794-64b6be4a0a3d # Comic Thumbnail
             instructions: null
             label: null
             required: false

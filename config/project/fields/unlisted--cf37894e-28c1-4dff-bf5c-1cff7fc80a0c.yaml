@@ -1,0 +1,14 @@
+columnSuffix: abmcuamq
+contentColumnType: boolean
+fieldGroup: 790b8232-1c19-47f1-9eda-8ab4993c0f3f # Comics
+handle: unlisted
+instructions: 'Will hide comic from listing pages, but is still viewable as direct link'
+name: Unlisted
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

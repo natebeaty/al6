@@ -1,4 +1,4 @@
-dateModified: 1649984026
+dateModified: 1651271937
 email:
   fromEmail: nate@clixel.com
   fromName: 'A-L 2.0'
@@ -58,6 +58,7 @@ meta:
     a51d06e4-79b9-4f41-9cdd-970f1f2ada6a: 'Links Index' # Links Index
     a405f9ff-0740-4d3d-a58e-ccb58c2a8517: General # General
     a930a8fe-9c1e-4443-b0b0-3f5a1fad9fc7: Bibliography # Bibliography
+    a2377d95-b143-479f-a794-64b6be4a0a3d: 'Comic Thumbnail' # Comic Thumbnail
     a9369b6c-3faf-4fac-b920-261684493c76: Text # Text
     a227488b-060a-42a1-bc97-10a5bdd7d9ff: Post # Post
     ab89bd20-d119-4ac0-92b5-6ecdedb392fc: 'Comics Index' # Comics Index
@@ -73,6 +74,7 @@ meta:
     cbceb58e-c647-45ab-afbd-6c28b7dc9087: 'SEO Title' # SEO Title
     ce9ca5a9-7ec2-405f-a639-ab22bca77b92: 'Link Blocks' # Link Blocks
     cf4366ab-a69e-47f1-aefe-31870e2276f3: Date # Date
+    cf37894e-28c1-4dff-bf5c-1cff7fc80a0c: Unlisted # Unlisted
     d03175f2-b2ce-4153-8bb9-6b61beab3416: Description # Description
     dd1fdb3a-8fad-48b2-bf73-8516edb33e49: 'About Index' # About Index
     e6fec7ec-02e6-4eee-89f2-6907fe350059: Size # Size
