@@ -8,6 +8,11 @@
   {% endif -%}
   <link rel="canonical" href="{{ siteUrl }}">
 
+  <link rel="stylesheet" media="screen" href="/assets/styles/main.css?ckcachebust=672972684">
+  <link rel="stylesheet" media="print" href="/assets/styles/print.css?ckcachebust=672972684">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=672972684">
+  <link rel="icon" href="/favicon.ico?v=2022&ckcachebust=672972684">
+
   <meta property="og:title" content="{% if seoTitle is defined %}{{ seoTitle }}{% elseif title is defined %}{{ title }} | {{ siteName }}{% else %}{{ siteName }}{% endif %}">
 
   {% if seoDescription is defined -%}
@@ -20,11 +25,6 @@
   {% endif -%}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=689E6C6ECAB103EF248592BF76C53FB0" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=EAB36837B66D1A24EB09423FC1E66779" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@800&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" media="screen" href="/assets/styles/main.css?ckcachebust=670964096">
-  <link rel="stylesheet" media="print" href="/assets/styles/print.css?ckcachebust=670964096">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?ckcachebust=670964096">
-  <link rel="icon" href="/favicon.ico?v=2022">
 </head>

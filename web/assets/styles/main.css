@@ -855,7 +855,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .page-wrapper {
-    padding: 10px 30px 30px 30px;
+    padding: 20px 30px 30px 30px;
   }
 }
 
@@ -1381,10 +1381,6 @@ https://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
-}
-
-.page-home .page-wrapper {
-  padding-top: 10px;
 }
 
 .link-grid h3 {
