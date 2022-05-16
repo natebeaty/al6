@@ -1,13 +1,13 @@
 {
   "require": {
-    "craftcms/cms": "3.7.39",
-    "craftcms/redactor": "2.10.7",
+    "craftcms/cms": "3.7.42",
+    "craftcms/redactor": "2.10.8",
     "elivz/craft-single-cat": "1.2.1",
-    "mmikkel/cp-field-inspect": "1.4.2",
+    "mmikkel/cp-field-inspect": "1.4.4",
     "samhernandez/craft-shortcodes": "1.1.0",
     "spicyweb/craft-embedded-assets": "2.10.7",
     "verbb/expanded-singles": "1.2.0",
-    "verbb/super-table": "2.7.1",
+    "verbb/super-table": "2.7.2",
     "vlucas/phpdotenv": "^5.4.0",
     "wbrowar/adminbar": "3.1.11"
   },
