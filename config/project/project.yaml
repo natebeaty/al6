@@ -1,4 +1,4 @@
-dateModified: 1652737672
+dateModified: 1652799915
 email:
   fromEmail: nate@clixel.com
   fromName: 'A-L 2.0'
@@ -28,6 +28,7 @@ meta:
     9bcdfc68-ead5-4c89-af2a-b64b1862300f: Interviews # Interviews
     015d48f9-dd42-4c18-b3b5-8a8f4e9106e9: Common # Common
     17a2b060-afb6-4940-8fac-6661eddad378: Excerpt # Excerpt
+    21a68a22-2b10-402c-a684-6336d8469cb2: '404' # 404
     25f7071a-0510-4f79-a798-33bd9b87fc5d: Title # Title
     28bcab46-1178-4204-8587-32e4bb9e6ed2: Bibliography # Bibliography
     47f73b70-35ad-40c4-9425-950138d362ca: 'News Archives' # News Archives
@@ -38,6 +39,7 @@ meta:
     86f51217-15e7-43c2-a243-9df28902664b: URL # URL
     89b317b4-8edc-4c80-9477-1406a3da4165: URL # URL
     228b1a99-262d-49bc-a796-5f102632eb26: Description # Description
+    358f3ef4-4984-45da-bae4-4c47a204d179: '404' # 404
     386ec114-053e-47b5-ac2f-c1db590d6cea: Info # Info
     620ceeaa-4529-4c96-9395-59eec2781da7: SEO # SEO
     688bcb8d-fe3e-434c-b1bb-a782ba796506: 'Comic Images' # Comic Images
@@ -110,6 +112,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
   shortcodes:
     edition: standard
     enabled: true

@@ -1,10 +1,16 @@
 {% extends "_layout" %}
 {% set title = "404" %}
 {% set bodyClass = "fourohfour-page" %}
+{% if entry is not defined %}
+  {% set entry = craft.entries.section('fourOhFour').one() %}
+{% endif %}
 
 {% block content %}
-  <div class="single-entry user-content">
-    <h1 class="display">4O4</h1>
-    <p>Sorry, we couldn't find the page you're looking for.</p>
-	</div>
+  {% cache unless currentUser %}
+
+  <div class="page-blocks">
+    {% include 'blocks/_page-blocks' %}
+  </div>
+
+  {% endcache %}
 {% endblock %}
