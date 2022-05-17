@@ -1,7 +1,11 @@
-dateModified: 1652799915
+dateModified: 1652811135
 email:
-  fromEmail: nate@clixel.com
-  fromName: 'A-L 2.0'
+  fromEmail: alec@alec-longstreth.com
+  fromName: 'Alec Longstreth'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
@@ -12,7 +16,7 @@ meta:
     2d8820e3-8e6b-4278-800c-ae4cdf640b73: Address # Address
     3bb78d0c-602f-46d2-9760-99316bd6e0ac: Comics # Comics
     3c7929de-5688-43ec-b0ca-171b2432cc83: 'Contact Info' # Contact Info
-    4baa37ad-12ad-43a8-b9da-86dc1276ac93: 'A-L 6.0' # A-L 6.0
+    4baa37ad-12ad-43a8-b9da-86dc1276ac93: 'Alec Longstreth' # Alec Longstreth
     4c28f35c-aa7b-4cc5-9714-00599869ae27: Body # Body
     4c57db8a-2a37-4bf4-8636-62780119f7c0: Title # Title
     4c74e475-0c0e-43c4-83d8-a70c025fd02b: 'News Index' # News Index
@@ -54,7 +58,7 @@ meta:
     94432a92-8952-4d97-b447-97b60da1a638: Body # Body
     526177fe-7cbc-4b91-97f4-27abb175e5a8: Interviewer # Interviewer
     644360b6-0d1e-4e88-90ee-5c0ad006c070: Homepage # Homepage
-    24430226-c637-40ff-91c3-963952acebcb: 'A-L 6.0' # A-L 6.0
+    24430226-c637-40ff-91c3-963952acebcb: 'Alec Longstreth' # Alec Longstreth
     a8e71ee5-274e-4e21-9156-dcd951e10739: Body # Body
     a51d06e4-79b9-4f41-9cdd-970f1f2ada6a: 'Links Index' # Links Index
     a405f9ff-0740-4d3d-a58e-ccb58c2a8517: General # General
@@ -131,7 +135,7 @@ plugins:
 system:
   edition: solo
   live: true
-  name: 'A-L 6.0!!'
+  name: 'Alec Longstreth'
   retryDuration: null
   schemaVersion: 3.7.33
   timeZone: America/Los_Angeles

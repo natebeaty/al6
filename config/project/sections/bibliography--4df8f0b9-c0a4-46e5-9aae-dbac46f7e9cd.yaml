@@ -4,7 +4,7 @@ handle: bibliography
 name: Bibliography
 propagationMethod: all
 siteSettings:
-  4baa37ad-12ad-43a8-b9da-86dc1276ac93: # A-L 6.0
+  4baa37ad-12ad-43a8-b9da-86dc1276ac93: # Alec Longstreth
     enabledByDefault: true
     hasUrls: true
     template: links/_bibliography
