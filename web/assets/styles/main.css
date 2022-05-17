@@ -930,6 +930,10 @@ address {
   color: #fff;
 }
 
+.adminbar svg {
+  width: 15px;
+}
+
 .site-header nav {
   -webkit-user-select: none;
      -moz-user-select: none;

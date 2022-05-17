@@ -155,3 +155,10 @@ address {
     }
   }
 }
+
+// Style admin bar svg to avoid flash of unstyled huge SVG on page load
+.adminbar {
+  svg {
+    width: 15px;
+  }
+}
