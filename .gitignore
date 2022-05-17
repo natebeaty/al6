@@ -7,12 +7,12 @@ config.codekit3
 node_modules
 
 # legacy static folders
-web/art
-web/basewood
-web/basewoodkickstarter
-web/cbm
-web/dvzine
-web/isleofelsikickstarter
-web/patreon
-web/temp
-web/wedding
+/web/art
+/web/basewood
+/web/basewoodkickstarter
+/web/cbm
+/web/dvzine
+/web/isleofelsikickstarter
+/web/patreon
+/web/temp
+/web/wedding
