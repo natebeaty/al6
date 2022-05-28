@@ -1086,6 +1086,10 @@ address {
 .user-content a:hover svg, .user-content a:focus svg {
   fill: #fff;
 }
+.user-content figure a, .user-content figure a:hover, .user-content figure a:focus {
+  background-color: none;
+  box-shadow: none;
+}
 .user-content ul {
   list-style-type: disc;
 }

@@ -7,6 +7,15 @@
   a {
     @include inline-link;
   }
+  // Image links
+  figure a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: none;
+      box-shadow: none;
+    }
+  }
   ul {
     list-style-type: disc;
   }
