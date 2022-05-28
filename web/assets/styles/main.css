@@ -1072,6 +1072,10 @@ address {
 .hover-links a:hover svg, .hover-links a:focus svg {
   fill: #fff;
 }
+.hover-links figure a, .hover-links figure a:hover, .hover-links figure a:focus {
+  background-color: none;
+  box-shadow: none;
+}
 
 .user-content a {
   background-color: rgba(40, 117, 169, 0);
