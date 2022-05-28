@@ -1059,41 +1059,32 @@ address {
     max-height: 18px;
   }
 }
+.user-content a,
 .hover-links a {
   background-color: rgba(40, 117, 169, 0);
   transition: all 0.1s;
 }
-.hover-links a:hover, .hover-links a:focus {
+.user-content a:hover, .user-content a:focus,
+.hover-links a:hover,
+.hover-links a:focus {
   color: #fff;
   border-color: #fff;
   background-color: #2875a9;
   box-shadow: 0.2em 0.1em 0 #2875a9, -0.2em 0.1em 0 #2875a9, -0.2em 0 0 #2875a9, 0.2em 0 0 #2875a9;
 }
-.hover-links a:hover svg, .hover-links a:focus svg {
+.user-content a:hover svg, .user-content a:focus svg,
+.hover-links a:hover svg,
+.hover-links a:focus svg {
   fill: #fff;
 }
-.hover-links figure a, .hover-links figure a:hover, .hover-links figure a:focus {
-  background-color: none;
+.user-content figure a, .user-content figure a:hover, .user-content figure a:focus,
+.hover-links figure a,
+.hover-links figure a:hover,
+.hover-links figure a:focus {
+  background: none;
   box-shadow: none;
 }
 
-.user-content a {
-  background-color: rgba(40, 117, 169, 0);
-  transition: all 0.1s;
-}
-.user-content a:hover, .user-content a:focus {
-  color: #fff;
-  border-color: #fff;
-  background-color: #2875a9;
-  box-shadow: 0.2em 0.1em 0 #2875a9, -0.2em 0.1em 0 #2875a9, -0.2em 0 0 #2875a9, 0.2em 0 0 #2875a9;
-}
-.user-content a:hover svg, .user-content a:focus svg {
-  fill: #fff;
-}
-.user-content figure a, .user-content figure a:hover, .user-content figure a:focus {
-  background-color: none;
-  box-shadow: none;
-}
 .user-content ul {
   list-style-type: disc;
 }
