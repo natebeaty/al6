@@ -2,6 +2,6 @@
 <ul class="wide-buttons">
   <li {{ category is not defined ? ' class="active"' : '' }}><a href="/comics/">&larr; All Comics</a></li>
   {% for link in comicsIndex.linkBlocks.all() %}
-    <li{% if link.linkUrl in craft.app.request.absoluteUrl %} class="active"{% endif %}><a href="{{ link.linkUrl }}">{{ link.linkTitle }}</a></li>
+    <li{% if link.linkUrl in craft.app.request.absoluteUrl %} class="active"{% endif %}><a{% if link.openInNewTab %} rel="noopener" target="_blank"{% endif %} href="{{ link.linkUrl }}">{{ link.linkTitle }}</a></li>
   {% endfor %}
 </ul>

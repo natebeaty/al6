@@ -23,6 +23,13 @@ settings:
               - width
               - ''
       -
+        - 526bab9f-412a-4287-899e-0ce622b373b6 # Open in New Tab
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
         - e8ce7d83-e450-4872-a359-71110fe805af # Image
         -
           __assoc__:

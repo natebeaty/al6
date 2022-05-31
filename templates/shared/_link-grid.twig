@@ -5,11 +5,11 @@
       <div class="grid spaced">
         {% if thumbnailImage %}
         <figure class="col-1-4">
-          <a href="{{ link.linkUrl }}"><img src="{{ thumbnailImage.getUrl() }}" alt="{{ thumbnailImage.title }}"></a>
+          <a{% if link.openInNewTab %} rel="noopener" target="_blank"{% endif %} href="{{ link.linkUrl }}"><img src="{{ thumbnailImage.getUrl() }}" alt="{{ thumbnailImage.title }}"></a>
         </figure>
         {% endif %}
         <div class="info col-3-4 user-content">
-          <h3><a href="{{ link.linkUrl }}">{{ link.linkTitle }}</a></h3>
+          <h3><a{% if link.openInNewTab %} rel="noopener" target="_blank"{% endif %} href="{{ link.linkUrl }}">{{ link.linkTitle }}</a></h3>
           {{ link.description }}
         </div>
       </div>

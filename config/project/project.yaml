@@ -1,4 +1,4 @@
-dateModified: 1652811135
+dateModified: 1654010693
 email:
   fromEmail: alec@alec-longstreth.com
   fromName: 'Alec Longstreth'
@@ -45,6 +45,7 @@ meta:
     228b1a99-262d-49bc-a796-5f102632eb26: Description # Description
     358f3ef4-4984-45da-bae4-4c47a204d179: '404' # 404
     386ec114-053e-47b5-ac2f-c1db590d6cea: Info # Info
+    526bab9f-412a-4287-899e-0ce622b373b6: 'Open in New Tab' # Open in New Tab
     620ceeaa-4529-4c96-9395-59eec2781da7: SEO # SEO
     688bcb8d-fe3e-434c-b1bb-a782ba796506: 'Comic Images' # Comic Images
     721d3c42-1e0b-43d9-9b2e-eda354e5c379: 'Link Pages' # Link Pages
