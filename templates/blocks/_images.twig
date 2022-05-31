@@ -1,5 +1,5 @@
 <div class="block-images user-content {{ block.size }}">
-  <div class="carousel flickity">
+  <div class="{{ block.images|length > 1 ? "carousel flickity" : "single-image" }}">
     {% for image in block.images %}
       {% set embeddedAsset = craft.embeddedAssets.get(image) %}
       {% if embeddedAsset %}
