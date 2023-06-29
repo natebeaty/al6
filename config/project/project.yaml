@@ -1,4 +1,71 @@
-dateModified: 1688068691
+dateModified: 1688068775
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Singles
+      type: heading
+    -
+      key: 'single:644360b6-0d1e-4e88-90ee-5c0ad006c070' # Homepage
+      type: native
+    -
+      key: 'single:0d137df9-8ee2-467d-a261-d5090d788157' # Links Index
+      type: native
+    -
+      key: 'single:ab89bd20-d119-4ac0-92b5-6ecdedb392fc' # Comics Index
+      type: native
+    -
+      key: 'single:4c74e475-0c0e-43c4-83d8-a70c025fd02b' # News Index
+      type: native
+    -
+      key: 'single:47f73b70-35ad-40c4-9425-950138d362ca' # News Archives
+      type: native
+    -
+      key: 'single:4df8f0b9-c0a4-46e5-9aae-dbac46f7e9cd' # Bibliography
+      type: native
+    -
+      key: 'single:9bcdfc68-ead5-4c89-af2a-b64b1862300f' # Interviews
+      type: native
+    -
+      key: 'single:358f3ef4-4984-45da-bae4-4c47a204d179' # 404
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      key: 'section:c058c732-53bd-4770-adf6-542237db08c8' # News
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      key: 'section:3bb78d0c-602f-46d2-9760-99316bd6e0ac' # Comics
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:80b614db-e0bc-483f-aeec-a5dbbbadb7c3' # General Pages
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:721d3c42-1e0b-43d9-9b2e-eda354e5c379' # Link Pages
+      type: native
+    -
+      heading: ''
+      type: heading
+>>>>>>> cb751c0634c5393315fb1b8ed50825f502230b82
 email:
   fromEmail: alec@alec-longstreth.com
   fromName: 'Alec Longstreth'
