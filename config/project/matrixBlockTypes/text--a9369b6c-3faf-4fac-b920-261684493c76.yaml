@@ -49,10 +49,10 @@ fields:
       defaultTransform: ''
       manualConfig: ''
       purifierConfig: null
-      purifyHtml: true
+      purifyHtml: false
       redactorConfig: null
       removeEmptyTags: true
-      removeInlineStyles: true
+      removeInlineStyles: false
       removeNbsp: true
       showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false

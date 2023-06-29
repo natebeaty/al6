@@ -59,6 +59,17 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General
       restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
       selectionLabel: 'Add images'
       showSiteMenu: true
       showUnpermittedFiles: false

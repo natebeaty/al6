@@ -1,4 +1,4 @@
-dateModified: 1688069777
+dateModified: 1688071505
 elementSources:
   craft\elements\Entry:
     -
@@ -111,7 +111,7 @@ meta:
     0f3f45d2-2f82-476a-b354-075afbc6df77: Images # Images
     0f94dd9c-11a3-4b60-93f9-af36f2c1a6fd: 'Featured Image' # Featured Image
     02adb2a9-964e-41ab-b4ac-edaac109ed4f: 'Comic Type' # Comic Type
-    2b2f9121-3ed8-47d1-b6ca-7f54ba92235a: 'Public Schema'
+    2b2f9121-3ed8-47d1-b6ca-7f54ba92235a: 'Public Schema' # Public Schema
     2d8820e3-8e6b-4278-800c-ae4cdf640b73: Address # Address
     3bb78d0c-602f-46d2-9760-99316bd6e0ac: Comics # Comics
     3c7929de-5688-43ec-b0ca-171b2432cc83: 'Contact Info' # Contact Info
