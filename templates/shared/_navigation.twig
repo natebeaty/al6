@@ -9,14 +9,14 @@
 {% import _self as navigation %}
 
 {% macro menu_links(items, outside, inside) %}
-{% spaceless %}
+{% apply spaceless %}
   {% import _self as navigation %}
     {% for item in items %}
       <{{inside}} class="nav-{{ item.name|lower }}{% if item.href in craft.app.request.absoluteUrl %} active{% endif %}">
         <a href="{{ item.href }}"><img src="/assets/images/{{ item.image }}" alt="{{ item.name }}"></a>
       </{{inside}}>
     {% endfor %}
-{% endspaceless %}
+{% endapply %}
 {% endmacro %}
 
 <ul class="primary-nav -hover-blocks">
