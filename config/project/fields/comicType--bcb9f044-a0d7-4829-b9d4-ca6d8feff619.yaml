@@ -20,4 +20,4 @@ settings:
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: elivz\singlecat\fields\SingleCatField
+type: verbb\singlecat\fields\SingleCatField
