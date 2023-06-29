@@ -1,36 +1,45 @@
+changedFieldIndicator: null
 field: 3c7929de-5688-43ec-b0ca-171b2432cc83 # Contact Info
 fieldLayouts:
   6906b7fa-d8f0-46ec-8f16-fbd066ac78ad:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 2d8820e3-8e6b-4278-800c-ae4cdf640b73 # Address
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f7e57edc-0296-4856-bb8c-0e8bb2090092
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: c28466ca-bc45-4fb5-8097-445e3bec82e2 # Email
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 96a6fd47-9495-4b80-90c2-a856d6624431
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 26d84f38-776a-4305-83c5-3246e8ca0173
+        userCondition: null
 fields:
   2d8820e3-8e6b-4278-800c-ae4cdf640b73: # Address
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: address
-    instructions: ''
+    instructions: null
     name: Address
     searchable: false
     settings:
@@ -40,13 +49,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -58,11 +67,11 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: email
-    instructions: ''
+    instructions: null
     name: Email
     searchable: false
     settings:
-      placeholder: ''
+      placeholder: null
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Email

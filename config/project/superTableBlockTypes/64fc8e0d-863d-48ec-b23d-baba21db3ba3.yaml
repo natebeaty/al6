@@ -1,54 +1,69 @@
+changedFieldIndicator: null
 field: 828c601b-05c2-4a83-a9c3-e3d1a6644654 # Interviews
 fieldLayouts:
   1fcfdfbd-ac98-4313-9912-752cf8feda58:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 57833ca5-8ac6-4bf7-98d6-6ba454a3cea5 # Name
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d154a08a-8fbf-4507-8fbc-9f7a1bfa07ef
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: cf4366ab-a69e-47f1-aefe-31870e2276f3 # Date
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 634ad739-e7c6-4ef6-bfd9-e0acae3bf090
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 526177fe-7cbc-4b91-97f4-27abb175e5a8 # Interviewer
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f7e598d7-1586-4a98-999b-d894e5088131
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: be4dcd68-2b70-42af-8608-0f946398e666 # Topics
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 399f2527-5fd7-4306-9e71-9658b32df7d9
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 7b5c7d76-253b-4520-b9a7-71d0e3cbaead
+        userCondition: null
 fields:
   57833ca5-8ac6-4bf7-98d6-6ba454a3cea5: # Name
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: interviewName
-    instructions: ''
+    instructions: null
     name: Name
     searchable: false
     settings:
@@ -58,13 +73,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: Simple.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: normal
@@ -76,7 +91,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: interviewer
-    instructions: ''
+    instructions: null
     name: Interviewer
     searchable: false
     settings:
@@ -86,13 +101,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: Simple.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: normal
@@ -104,7 +119,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: topics
-    instructions: ''
+    instructions: null
     name: Topics
     searchable: false
     settings:
@@ -114,13 +129,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: Simple.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: normal
@@ -132,16 +147,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: date
-    instructions: ''
+    instructions: null
     name: Date
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

@@ -2,10 +2,12 @@ columnSuffix: mfktklwn
 contentColumnType: string
 fieldGroup: 015d48f9-dd42-4c18-b3b5-8a8f4e9106e9 # Common
 handle: interviews
-instructions: ''
+instructions: null
 name: Interviews
 searchable: false
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   columns:
     __assoc__:
       -
@@ -38,13 +40,12 @@ settings:
               - ''
   contentTable: '{{%stc_interviews}}'
   fieldLayout: table
-  maxRows: ''
-  minRows: ''
-  placeholderKey: null
+  maxRows: null
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: ''
-  staticField: ''
+  selectionLabel: null
+  staticField: null
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

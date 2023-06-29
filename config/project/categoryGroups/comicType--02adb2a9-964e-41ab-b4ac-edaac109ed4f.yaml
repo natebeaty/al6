@@ -3,6 +3,7 @@ fieldLayouts:
   b38f7c0c-b8d0-41a9-a21a-a7911b3414d1:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -10,6 +11,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,50 +27,67 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 739e4712-091d-44d4-a98a-0d75f8afbb3d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a8e71ee5-274e-4e21-9156-dcd951e10739 # Body
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8e8a1cb5-fcf6-402e-90f2-cc8fcc2906c3
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 4dfada67-c51b-4d84-83b3-256832d83446
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4f7f4cc2-cc21-4b6e-80ac-478cb881b9fb # SEO Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b3285630-f9d9-44b7-b9ce-1e1c85de5bd5
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: cbceb58e-c647-45ab-afbd-6c28b7dc9087 # SEO Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: be3d37fa-4f5f-4cf9-8b86-5351e6a25784
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2646aee3-6b1a-45ae-94dd-c254b55fc84b # SEO Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 02dce456-8a7e-4e16-9c84-1a35cb4e220e
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 0e8f4620-b81b-401f-9259-f66c28579105
+        userCondition: null
 handle: comicType
 name: 'Comic Type'
 siteSettings:

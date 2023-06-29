@@ -2,6 +2,7 @@ fieldLayouts:
   1d00b1f5-c197-4ffb-a637-f8e9cc70b357:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -23,60 +25,80 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3cad50b7-3397-4ae1-bf96-7e3479c18786
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a8e71ee5-274e-4e21-9156-dcd951e10739 # Body
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 11050e0a-abcc-4a52-98be-04d860671a34
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 08cbe854-430a-4209-a87d-cc863f659182 # Page Blocks
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e2d7d8d8-186c-4848-894e-e5d518134ac0
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: ebf6f5c8-a90c-42be-bc1c-bda482001b05
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4f7f4cc2-cc21-4b6e-80ac-478cb881b9fb # SEO Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ca37edb2-53b4-4314-98c3-f2e012bb2195
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: cbceb58e-c647-45ab-afbd-6c28b7dc9087 # SEO Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6d459228-ec28-4ae8-bd01-e1d7431c8aca
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2646aee3-6b1a-45ae-94dd-c254b55fc84b # SEO Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a8830888-12aa-4c55-bab2-8a0993cdc4d5
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: ec7466f6-8dff-419a-8c5a-44c6d79a07f9
+        userCondition: null
 handle: page
 hasTitleField: true
 name: Page

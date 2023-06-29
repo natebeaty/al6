@@ -7,24 +7,28 @@ name: 'Comic Thumbnail'
 searchable: false
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds: null
+  branchLimit: null
   defaultUploadLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General
-  defaultUploadLocationSubpath: ''
-  limit: '1'
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
   previewMode: full
-  restrictFiles: ''
+  restrictFiles: false
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:7b466644-d7d2-4ddc-bb1c-42e5bab64ec0' # Comics
+  restrictedLocationSubpath: '{slug}'
   selectionLabel: 'Set thumbnail'
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:7b466644-d7d2-4ddc-bb1c-42e5bab64ec0' # Comics
-  singleUploadLocationSubpath: '{slug}'
-  source: null
   sources: '*'
   targetSiteId: null
-  useSingleFolder: true
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null

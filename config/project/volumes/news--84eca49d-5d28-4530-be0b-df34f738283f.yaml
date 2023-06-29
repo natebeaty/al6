@@ -2,6 +2,7 @@ fieldLayouts:
   d37bf652-9f63-4137-9fc4-1376f568dfaf:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -23,18 +25,19 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 04ee2c29-5a65-4a7b-8fc0-388b08dde52e
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 75afc8fd-054c-4a15-a7e3-4a53ec185dc5
+        userCondition: null
+fs: news
 handle: news
-hasUrls: true
 name: News
-settings:
-  path: '@webroot/uploads/news'
 sortOrder: 2
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
-type: craft\volumes\Local
-url: '@rootUrl/uploads/news'
+titleTranslationMethod: site
+transformFs: null
+transformSubpath: ''

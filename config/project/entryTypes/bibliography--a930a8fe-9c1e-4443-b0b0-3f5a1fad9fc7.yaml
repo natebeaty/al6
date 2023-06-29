@@ -2,6 +2,7 @@ fieldLayouts:
   38717bf9-e92b-4c53-8801-f1b8aabbf8cc:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -23,60 +25,80 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 82caf6ab-0718-4427-aa1f-e89e48b04b6b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a8e71ee5-274e-4e21-9156-dcd951e10739 # Body
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 012963ee-d4a4-4fce-9b81-7fe8c97148c5
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 28bcab46-1178-4204-8587-32e4bb9e6ed2 # Bibliography
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 66548332-afc3-41b4-8bff-65149ba9cb30
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: ec4bcf86-8459-475c-a8e4-e01c617a39f5
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4f7f4cc2-cc21-4b6e-80ac-478cb881b9fb # SEO Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cab3a438-331b-400b-b92b-a7f5b29f23b1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: cbceb58e-c647-45ab-afbd-6c28b7dc9087 # SEO Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2858a916-6095-44ec-ba9e-4c3a954962a6
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2646aee3-6b1a-45ae-94dd-c254b55fc84b # SEO Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fdc55113-bb60-45ae-9c6c-53901850a758
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 164b3f16-d669-492f-87c4-5ab4b9a6c645
+        userCondition: null
 handle: bibliography
 hasTitleField: false
 name: Bibliography

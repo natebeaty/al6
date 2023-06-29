@@ -2,6 +2,7 @@ fieldLayouts:
   077c5938-8602-4f3b-a250-d098b650c7d8:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -23,18 +25,19 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 4aacea15-f9fd-4204-b06d-2120618200e6
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 5a79008a-7596-49f6-a308-ea896bf59465
+        userCondition: null
+fs: comics
 handle: comics
-hasUrls: true
 name: Comics
-settings:
-  path: '@webroot/uploads/comics'
 sortOrder: 3
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
-type: craft\volumes\Local
-url: '@rootUrl/uploads/comics'
+titleTranslationMethod: site
+transformFs: null
+transformSubpath: ''

@@ -6,6 +6,8 @@ instructions: 'Currently shows on About page using the shortcode [contact]'
 name: 'Contact Info'
 searchable: false
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   columns:
     __assoc__:
       -
@@ -24,13 +26,12 @@ settings:
               - ''
   contentTable: '{{%stc_contactinfo}}'
   fieldLayout: row
-  maxRows: ''
-  minRows: ''
-  placeholderKey: null
+  maxRows: null
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: ''
-  staticField: '1'
+  selectionLabel: null
+  staticField: true
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

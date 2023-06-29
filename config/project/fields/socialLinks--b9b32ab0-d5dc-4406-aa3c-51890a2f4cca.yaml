@@ -6,6 +6,8 @@ instructions: 'Currently shows on About page using the shortcode [social-links],
 name: 'Social Links'
 searchable: false
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   columns:
     __assoc__:
       -
@@ -31,13 +33,12 @@ settings:
               - ''
   contentTable: '{{%stc_sociallinks}}'
   fieldLayout: table
-  maxRows: ''
-  minRows: ''
-  placeholderKey: null
+  maxRows: null
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: 'Add a link'
-  staticField: ''
+  staticField: null
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

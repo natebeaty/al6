@@ -11,9 +11,9 @@ settings:
   max: null
   min: 1
   prefix: null
-  previewCurrency: ''
+  previewCurrency: null
   previewFormat: none
-  size: '2'
+  size: 2
   suffix: Posts
 translationKeyFormat: null
 translationMethod: none

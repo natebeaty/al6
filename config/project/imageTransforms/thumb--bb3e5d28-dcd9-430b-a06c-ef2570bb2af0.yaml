@@ -1,3 +1,4 @@
+fill: null
 format: null
 handle: thumb
 height: null
@@ -6,4 +7,5 @@ mode: fit
 name: Thumb
 position: center-center
 quality: null
+upscale: true
 width: 300

@@ -3,56 +3,68 @@ fieldLayouts:
   7a73e5a2-036b-4b83-bb62-d38d55f6aa74:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: e6fec7ec-02e6-4eee-89f2-6907fe350059 # Size
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: db10fae2-990f-4347-bb46-c2612f8d77bf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8e8d15bf-94c2-431d-9822-d623b482f20f # Images
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ddd03bef-a73e-4892-9ed4-99fe5300a4c8
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 914cff29-d293-42b8-9efa-df51c76288a7
+        userCondition: null
 fields:
   8e8d15bf-94c2-431d-9822-d623b482f20f: # Images
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: images
-    instructions: ''
+    instructions: null
     name: Images
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds: null
+      branchLimit: null
       defaultUploadLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General
-      defaultUploadLocationSubpath: ''
-      limit: ''
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
       previewMode: full
-      restrictFiles: ''
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General
+      restrictedLocationSubpath: null
       selectionLabel: 'Add images'
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:a405f9ff-0740-4d3d-a58e-ccb58c2a8517' # General
-      singleUploadLocationSubpath: ''
-      source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
@@ -63,11 +75,10 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: size
-    instructions: ''
+    instructions: null
     name: Size
     searchable: false
     settings:
-      optgroups: true
       options:
         -
           __assoc__:

@@ -1,4 +1,4 @@
-dateModified: 1688068775
+dateModified: 1688069777
 elementSources:
   craft\elements\Entry:
     -
@@ -65,7 +65,6 @@ elementSources:
     -
       heading: ''
       type: heading
->>>>>>> cb751c0634c5393315fb1b8ed50825f502230b82
 email:
   fromEmail: alec@alec-longstreth.com
   fromName: 'Alec Longstreth'
@@ -80,12 +79,39 @@ email:
     useAuthentication: '1'
     username: $SMTP_USER
   transportType: craft\mail\transportadapters\Smtp
+fs:
+  comics:
+    hasUrls: true
+    name: Comics
+    settings:
+      path: '@webroot/uploads/comics'
+    type: craft\fs\Local
+    url: '@rootUrl/uploads/comics'
+  general:
+    hasUrls: true
+    name: General
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@rootUrl/uploads'
+  news:
+    hasUrls: true
+    name: News
+    settings:
+      path: '@webroot/uploads/news'
+    type: craft\fs\Local
+    url: '@rootUrl/uploads/news'
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
 meta:
   __names__:
     0d137df9-8ee2-467d-a261-d5090d788157: 'Links Index' # Links Index
     0f3f45d2-2f82-476a-b354-075afbc6df77: Images # Images
     0f94dd9c-11a3-4b60-93f9-af36f2c1a6fd: 'Featured Image' # Featured Image
     02adb2a9-964e-41ab-b4ac-edaac109ed4f: 'Comic Type' # Comic Type
+    2b2f9121-3ed8-47d1-b6ca-7f54ba92235a: 'Public Schema'
     2d8820e3-8e6b-4278-800c-ae4cdf640b73: Address # Address
     3bb78d0c-602f-46d2-9760-99316bd6e0ac: Comics # Comics
     3c7929de-5688-43ec-b0ca-171b2432cc83: 'Contact Info' # Contact Info
@@ -205,16 +231,17 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 2.2.1
+    schemaVersion: 3.0.0
 system:
   edition: solo
   live: true
   name: 'Alec Longstreth'
   retryDuration: null
-  schemaVersion: 3.7.33
+  schemaVersion: 4.4.0.4
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

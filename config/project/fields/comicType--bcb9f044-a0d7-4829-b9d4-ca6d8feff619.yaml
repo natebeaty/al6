@@ -2,19 +2,20 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 790b8232-1c19-47f1-9eda-8ab4993c0f3f # Comics
 handle: comicType
-instructions: ''
+instructions: null
 name: 'Comic Type'
 searchable: false
 settings:
   allowSelfRelations: false
-  branchLimit: 1
-  limit: null
+  branchLimit: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
   selectionLabel: null
-  showBlankOption: '1'
+  showBlankOption: true
   showSiteMenu: true
   source: 'group:02adb2a9-964e-41ab-b4ac-edaac109ed4f' # Comic Type
-  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

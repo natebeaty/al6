@@ -2,6 +2,7 @@ fieldLayouts:
   e24d6086-2395-41de-98f5-f7b5e1035d28:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -23,60 +25,80 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1b6f3f61-e55d-4c73-b1f0-ca8e6d7aa185
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a8e71ee5-274e-4e21-9156-dcd951e10739 # Body
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c3389481-c316-4625-87b9-7eeb8ba19ed4
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 828c601b-05c2-4a83-a9c3-e3d1a6644654 # Interviews
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3459572e-8d8c-42d4-8f46-c287b0ddfd1f
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 9892779b-02b6-4e76-8fe4-e51c0f8cd57c
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4f7f4cc2-cc21-4b6e-80ac-478cb881b9fb # SEO Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 767be65a-6a2d-4a4e-aaa3-5ca7aefdab44
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: cbceb58e-c647-45ab-afbd-6c28b7dc9087 # SEO Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: cc561a56-6bf6-47a0-8b60-abe7c60d2810
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2646aee3-6b1a-45ae-94dd-c254b55fc84b # SEO Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3ea29111-2466-466e-847c-9834bc2ffb21
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: ec5558ca-cb2a-4d62-8f8f-057b222f08d1
+        userCondition: null
 handle: interviews
 hasTitleField: false
 name: Interviews

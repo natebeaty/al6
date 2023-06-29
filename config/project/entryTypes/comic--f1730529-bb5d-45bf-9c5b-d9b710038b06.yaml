@@ -2,6 +2,7 @@ fieldLayouts:
   ff4ec72c-0bd9-405a-b10f-1fc06a87837d:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -23,96 +25,128 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d6da57dc-b973-4f86-9857-1454823b38b1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: bcb9f044-a0d7-4829-b9d4-ca6d8feff619 # Comic Type
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 448669b9-9b51-4600-a3b7-b311bab351b7
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: cf37894e-28c1-4dff-bf5c-1cff7fc80a0c # Unlisted
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e6beb359-0a81-45a3-9258-9a11c9bdd459
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 386ec114-053e-47b5-ac2f-c1db590d6cea # Info
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 854f6a46-b67b-4915-b085-e6df2e970774
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d03175f2-b2ce-4153-8bb9-6b61beab3416 # Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ab245bef-d611-403c-9fc7-5ad3d59a09e4
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a2377d95-b143-479f-a794-64b6be4a0a3d # Comic Thumbnail
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 106ed67a-fdf7-44e2-9bd7-5837338c14f1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 688bcb8d-fe3e-434c-b1bb-a782ba796506 # Comic Images
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f0bf6561-e970-49a4-ba89-200a7d825561
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: e2c4641f-d345-474d-b9c9-f71fcb5559e6
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4f7f4cc2-cc21-4b6e-80ac-478cb881b9fb # SEO Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1054ace7-387e-42ae-b48e-1e966a53fcd9
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: cbceb58e-c647-45ab-afbd-6c28b7dc9087 # SEO Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fad96b0c-1805-408b-b5fa-56beaccbdba8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2646aee3-6b1a-45ae-94dd-c254b55fc84b # SEO Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e670f123-8419-4117-8d47-5adbea8e3ee3
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 7a02b4fb-ef73-4471-9f3c-d268156e9f39
+        userCondition: null
 handle: comic
 hasTitleField: true
 name: Comic
