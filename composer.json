@@ -1,16 +1,16 @@
 {
     "require": {
-        "craftcms/cms": "3.7.48",
-        "craftcms/redactor": "2.10.10",
-        "elivz/craft-single-cat": "1.2.1",
-        "ether/seo": "3.7.4",
+        "craftcms/cms": "^4.0.0",
+        "craftcms/redactor": "3.0.4",
+        "ether/seo": "4.1.2",
         "mmikkel/cp-field-inspect": "1.4.4",
-        "samhernandez/craft-shortcodes": "1.1.0",
-        "spicyweb/craft-embedded-assets": "2.11.3",
-        "verbb/expanded-singles": "1.2.0",
-        "verbb/super-table": "2.7.2",
+        "spicyweb/craft-embedded-assets": "3.1.5",
+        "verbb/expanded-singles": "2.0.1",
+        "verbb/shortcodes": "3.0.0",
+        "verbb/single-cat": "3.0.3",
+        "verbb/super-table": "3.0.9",
         "vlucas/phpdotenv": "^5.4.0",
-        "wbrowar/adminbar": "3.1.11"
+        "wbrowar/adminbar": "3.2.0"
     },
     "require-dev": {
         "yiisoft/yii2-shell": "^2.0.3"
@@ -28,7 +28,7 @@
         "sort-packages": true,
         "optimize-autoloader": true,
         "platform": {
-            "php": "7.4"
+            "php": "8.0.2"
         }
     },
     "scripts": {

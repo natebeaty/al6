@@ -23,18 +23,16 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
+fs: news
 handle: news
 hasUrls: true
 name: News
-settings:
-  path: '@webroot/uploads/news'
 sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
-type: craft\volumes\Local
 url: '@rootUrl/uploads/news'
