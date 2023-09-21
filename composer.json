@@ -1,11 +1,11 @@
 {
     "require": {
-        "craftcms/cms": "^4.0.0",
+        "craftcms/cms": "4.5.5",
         "craftcms/redactor": "3.0.4",
-        "ether/seo": "4.1.2",
+        "ether/seo": "4.2.1",
         "mmikkel/cp-field-inspect": "1.4.4",
-        "spicyweb/craft-embedded-assets": "3.1.5",
-        "verbb/expanded-singles": "2.0.1",
+        "spicyweb/craft-embedded-assets": "3.1.8",
+        "verbb/expanded-singles": "2.0.5",
         "verbb/shortcodes": "3.0.0",
         "verbb/single-cat": "3.0.3",
         "verbb/super-table": "3.0.9",
