@@ -5,6 +5,7 @@
 .nova
 config.codekit3
 node_modules
+.python-version
 
 # legacy static folders
 /web/art
