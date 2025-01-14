@@ -1,14 +1,14 @@
 {
     "require": {
-        "craftcms/cms": "4.11.5",
+        "craftcms/cms": "4.13.9",
         "craftcms/redactor": "3.1.0",
-        "ether/seo": "4.2.3",
+        "ether/seo": "4.2.4",
         "mmikkel/cp-field-inspect": "1.4.4",
-        "spicyweb/craft-embedded-assets": "4.1.2",
+        "spicyweb/craft-embedded-assets": "4.2.0",
         "verbb/expanded-singles": "2.0.5",
         "verbb/shortcodes": "3.0.0",
         "verbb/single-cat": "3.0.3",
-        "verbb/super-table": "3.0.14",
+        "verbb/super-table": "3.0.15",
         "vlucas/phpdotenv": "^5.4.0",
         "wbrowar/craft-admin-bar": "4.3.0"
     },
